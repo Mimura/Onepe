@@ -37,22 +37,22 @@ class SwpmForm {
     
     protected function user_name() {
         global $wpdb;
-        if (!empty($this->fields['user_name'])){return;}
-        $user_name = filter_input(INPUT_POST, 'user_name',FILTER_SANITIZE_STRING);
+        if (!empty($this->fields['email'])){return;}
+        $user_name = filter_input(INPUT_POST, 'email',FILTER_SANITIZE_STRING);
         if (empty($user_name)) {
-            $this->errors['user_name'] = SwpmUtils::_('Username is required');
+            $this->errors['user_name'] = SwpmUtils::_('email is required');
             return;
         }
         if (!SwpmMemberUtils::is_valid_user_name($user_name)) {
-            $this->errors['user_name'] = SwpmUtils::_('Username contains invalid character');
+            $this->errors['user_name'] = SwpmUtils::_('email contains invalid character');
             return;
         }
         $saned = sanitize_text_field($user_name);
         $query = "SELECT count(member_id) FROM {$wpdb->prefix}swpm_members_tbl WHERE user_name= %s";
         $result = $wpdb->get_var($wpdb->prepare($query, strip_tags($saned)));
         if ($result > 0) {
-            if ($saned != $this->fields['user_name']) {
-                $this->errors['user_name'] = SwpmUtils::_('Username already exists.');
+            if ($saned != $this->fields['email']) {
+                $this->errors['user_name'] = SwpmUtils::_('email already exists.');
                 return;
             }
         }

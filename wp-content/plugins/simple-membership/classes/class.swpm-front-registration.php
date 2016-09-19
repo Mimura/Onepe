@@ -155,13 +155,13 @@ class SwpmFrontRegistration extends SwpmRegistration {
         }
 
         $wp_user_info = array();
-        $wp_user_info['user_nicename'] = implode('-', explode(' ', $member_info['user_name']));
-        $wp_user_info['display_name'] = $member_info['user_name'];
+        $wp_user_info['user_nicename'] =  $member_info['first_name'];//implode('-', explode(' ', $member_info['user_name']));
+        $wp_user_info['display_name'] =  $member_info['first_name'];//$member_info['user_name'];
         $wp_user_info['user_email'] = $member_info['email'];
-        $wp_user_info['nickname'] = $member_info['user_name'];
+        $wp_user_info['nickname'] = $member_info['first_name'];
         $wp_user_info['first_name'] = $member_info['first_name'];
-        $wp_user_info['last_name'] = $member_info['last_name'];
-        $wp_user_info['user_login'] = $member_info['user_name'];
+        $wp_user_info['last_name'] = $member_info['last_name'];//これがtwitterID
+        $wp_user_info['user_login'] =  $member_info['user_name'];
         $wp_user_info['password'] = $member_info['plain_password'];
         $wp_user_info['role'] = $user_role;
         $wp_user_info['user_registered'] = date('Y-m-d H:i:s');
