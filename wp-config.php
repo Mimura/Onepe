@@ -21,16 +21,16 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', 'omosirodouga_omosirodouga');
+define('DB_NAME', 'fastIlust_wp');
 
 /** MySQL データベースのユーザー名 */
-define('DB_USER', 'omosirodouga_s');
+define('DB_USER', 'root');
 
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', '1730saiki');
+define('DB_PASSWORD', '');
 
 /** MySQL のホスト名 */
-define('DB_HOST', 'mysql2.minibird.netowl.jp');
+define('DB_HOST', '127.0.0.1');
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define('DB_CHARSET', 'utf8');

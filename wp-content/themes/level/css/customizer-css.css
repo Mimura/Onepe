@@ -5,6 +5,13 @@
 h3.accordion-section-title:before {
 color:#0073aa;
 }
+li#accordion-section-header_image > h3.accordion-section-title:before {
+   content: "\f226";
+    font-family: dashicons;
+    padding: 3px;
+	vertical-align: bottom;
+	font-size: 17px;
+    font-weight: normal;}
 li#customize-control-important_links a:before {
    content: "\f504";
     font-family: dashicons;

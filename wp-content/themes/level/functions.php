@@ -1,5 +1,6 @@
 <?php
 	include_once 'inc/installs.php';
+	include_once('inc/core/core.php');
 
 /**
  * Level functions and definitions.

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="949a49e5-90b7-4cee-8ee0-e9ecd431e2e4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-config.php" afterPath="$PROJECT_DIR$/wp-config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/debug.log" afterPath="$PROJECT_DIR$/wp-content/debug.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/index.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/jquery-ui-1.10.4.custom.css" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/jquery-ui-1.10.4.custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/jquery-ui-1.10.4.custom.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/jquery-ui-1.10.4.custom.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/multiple-select.css" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/multiple-select.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/ure-admin.css" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/ure-admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/images/index.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/images/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/advertisement.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/advertisement.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/ajax-processor.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/ajax-processor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/assign-role.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/assign-role.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/base-lib.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/base-lib.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/bbpress.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/bbpress.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/capabilities-groups-manager.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/capabilities-groups-manager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/capability.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/capability.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/known-js-css-compatibility-issues.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/known-js-css-compatibility-issues.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/protect-admin.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/protect-admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/role-additional-options.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/role-additional-options.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/role-view.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/role-view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/screen-help.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/screen-help.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/task-queue.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/task-queue.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/ure-lib.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/ure-lib.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/user-other-roles.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/user-other-roles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/user-role-editor.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/user-role-editor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/user-view.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/user-view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/view.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/define-constants.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/define-constants.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/index.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/loader.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/loader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/misc-support-stuff.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/misc-support-stuff.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/settings-template.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/settings-template.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/index.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/index.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/jquery.multiple.select.js" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/jquery.multiple.select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/ure-js.js" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/ure-js.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/ure-user-profile-other-roles.js" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/ure-user-profile-other-roles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/ure-users.js" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/ure-users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/lang/index.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/lang/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/lang/user-role-editor.pot" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/lang/user-role-editor.pot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/readme.txt" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/uninstall.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/uninstall.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/user-role-editor.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/user-role-editor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/404.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/404.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/archive.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/archive.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/comments.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/comments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/css/custom-min.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/css/custom-min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/css/custom.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/css/customizer-css.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/css/customizer-css.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/css/editor-style.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/css/editor-style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/font-awesome/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/font-awesome/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/wp-content/themes/level/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/css/foundation.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/css/foundation.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/css/foundation.min.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/css/foundation.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.core.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.drilldown.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.drilldown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.dropdown.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.dropdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.min.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.offcanvas.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.offcanvas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.sticky.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.sticky.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/inc/class-tgm-plugin-activation.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/inc/class-tgm-plugin-activation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/inc/custom-header.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/inc/custom-header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/inc/customizer.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/inc/customizer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/inc/extras.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/inc/extras.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/inc/jetpack.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/inc/jetpack.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/inc/template-tags.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/inc/template-tags.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/js/customizer.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/js/customizer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/js/loadscripts.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/js/loadscripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/js/navigation.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/js/navigation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/js/skip-link-focus-fix.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/js/skip-link-focus-fix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/page.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/readme.txt" afterPath="$PROJECT_DIR$/wp-content/themes/level/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/search.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/sidebar.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/single.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/single.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-none.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-none.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-page.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-search.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-single.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-single.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/template-parts/random-posts.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/template-parts/random-posts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/template-parts/top.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/template-parts/top.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/woocommerce.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/woocommerce.php" />
+    </list>
+    <ignored path="fastllustsite.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="fastllustsite" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="wp-config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1371">
+              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="archive.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/gridster-lite/archive.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1890">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/gridster-lite/image.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+              <folding>
+                <marker date="1474208958359" expanded="true" signature="663:670" ph="×" />
+                <marker date="1474208958359" expanded="true" signature="1424:1430" ph="←" />
+                <marker date="1474208958359" expanded="true" signature="1566:1572" ph="→" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/gridster-lite/content.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/gridster-lite/image.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/gridster-lite/content.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1042" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="949a49e5-90b7-4cee-8ee0-e9ecd431e2e4" name="Default" comment="" />
+      <created>1474128541763</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1474128541763</updated>
+      <workItem from="1474128542975" duration="2707000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2707000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/wp-content/themes/gridster-lite/content.php</url>
+          <line>10</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1371">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/gridster-lite/archive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1890">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/gridster-lite/image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <marker date="1474208958359" expanded="true" signature="663:670" ph="×" />
+            <marker date="1474208958359" expanded="true" signature="1424:1430" ph="←" />
+            <marker date="1474208958359" expanded="true" signature="1566:1572" ph="→" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/gridster-lite/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

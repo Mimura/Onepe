@@ -29,6 +29,19 @@ function level_customize_register( $wp_customize ) {
 
       public function render_content() {
          //Add Theme instruction
+		 echo '<ul><b>
+			<li>' . esc_attr__( '* WooCommerce & bbPress Support', 'level' ) . '</li>
+			<li>' . esc_attr__( '* SEO Optimized', 'level' ) . '</li>
+			<li>' . esc_attr__( '* More Responsive Design', 'level' ) . '</li>
+			<li>' . esc_attr__( '* Full Support', 'level' ) . '</li>
+			<li>' . esc_attr__( '* Google Fonts', 'level' ) . '</li>
+			<li>' . esc_attr__( '* Theme Color Customization', 'level' ) . '</li>
+			<li>' . esc_attr__( '* Custom CSS', 'level' ) . '</li>
+			<li>' . esc_attr__( '* Website Layout', 'level' ) . '</li>
+			<li>' . esc_attr__( '* Select Number of Columns', 'level' ) . '</li>
+			<li>' . esc_attr__( '* Website Width Control', 'level' ) . '</li>
+			</b></ul>
+		 ';
          $important_links = array(
             'theme-info' => array(
                'link' => esc_url('http://www.insertcart.com/product/level-wordpress-theme/'),

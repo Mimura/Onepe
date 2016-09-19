@@ -69,7 +69,7 @@ wp_nav_menu( $offcanvasnav ); // navigation of you website ?>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation --></div>
   <div class="large-2 columns">
- <?php if(get_theme_mod('search_setting') !=='hide'){ get_search_form(); }?>
+ <?php if(get_theme_mod('search_setting') !=='hide'){ get_search_form(); } ?>
 </div>
 </div>
 </div>
