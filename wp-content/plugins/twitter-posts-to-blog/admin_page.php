@@ -1,3 +1,4 @@
+//newAdmin
 <div class="wrap dgtw">
 
     <form method="post">

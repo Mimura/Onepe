@@ -13,6 +13,13 @@
         exit;
     }
 
+
+    if (!empty($dg_tw_ft['access_key']) && !empty($dg_tw_ft['access_secret']) && !empty($dg_tw_ft['access_token']) && !empty($dg_tw_ft['access_token_secret'])) {
+        //  $connection = new TwitterOAuth($dg_tw_ft['access_key'], $dg_tw_ft['access_secret'], $dg_tw_ft['access_token'], $dg_tw_ft['access_token_secret']);
+        $connection = new TwitterOAuth($dg_tw_ft['access_key'], $dg_tw_ft['access_secret']);
+        $connection -> getBearerToken();
+    }
+
     foreach ($dg_tw_queryes as $query) {
         $parameters = array(
             'q' => $query['value'],

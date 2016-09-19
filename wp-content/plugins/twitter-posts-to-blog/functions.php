@@ -4,7 +4,6 @@
  */
 require_once(dirname(__FILE__) . '/../../../wp-load.php');
 require_once(dirname(__FILE__) . '/../../../wp-admin/includes/admin.php');
-
 /*
  * SETUP THE CRON
  */
@@ -20,7 +19,9 @@ function dg_tw_load_next_items()
     $dg_tw_ft = get_option('dg_tw_ft');
 
     if (!empty($dg_tw_ft['access_key']) && !empty($dg_tw_ft['access_secret']) && !empty($dg_tw_ft['access_token']) && !empty($dg_tw_ft['access_token_secret'])) {
-        $connection = new TwitterOAuth($dg_tw_ft['access_key'], $dg_tw_ft['access_secret'], $dg_tw_ft['access_token'], $dg_tw_ft['access_token_secret']);
+      //  $connection = new TwitterOAuth($dg_tw_ft['access_key'], $dg_tw_ft['access_secret'], $dg_tw_ft['access_token'], $dg_tw_ft['access_token_secret']);
+        $connection = new TwitterOAuth($dg_tw_ft['access_key'], $dg_tw_ft['access_secret']);
+        $connection -> getBearerToken();
     }
 
     $dg_tw_exclusions = get_option('dg_tw_exclusions');
@@ -44,11 +45,8 @@ function dg_tw_load_next_items()
         error_log('Loop query string \n');
         $dg_tw_data = $connection->get('search/tweets', $parameters);
 
-        //Set the last tweet id
-        if (count($dg_tw_data->statuses)) {
-            $status = end($dg_tw_data->statuses);
-            $dg_tw_queryes[urlencode($query['value'])]['last_id'] = $status->id_str;
-        }
+
+
 
         foreach ($dg_tw_data->statuses as $key => $item) {
             $count++;
@@ -77,12 +75,21 @@ function dg_tw_load_next_items()
             if ($count == $dg_tw_ft['ipp'])
                 break;
         }
+
+        //Set the last tweet id
+        if (count($dg_tw_data->statuses)) {
+            $status =reset($dg_tw_data->statuses);
+            $dg_tw_queryes[urlencode($query['value'])]['last_id'] = $status->id_str;
+            update_option('dg_tw_queryes', $dg_tw_queryes);
+        }
     }
+
 
     if (!empty($mega_tweet)) {
         dg_tw_publish_mega_tweet($mega_tweet);
 
         update_option('dg_tw_exclusions', $dg_tw_exclusions);
+
     }
 }
 
@@ -244,13 +251,9 @@ function dg_tw_slug($str)
 
 function dg_tw_iswhite($tweet)
 {
-    error_log(print_r("IsWhiteeeeeeeeeeeeee", true));
-    
- 
-    
+
     global $dg_tw_queryes, $dg_tw_publish, $dg_tw_tags, $dg_tw_cats, $dg_tw_ft, $wpdb;
   
-error_log(print_r($dg_tw_ft['gooduser'], true));
     if (empty($dg_tw_ft['badwords']) && empty($dg_tw_ft['baduser'])&& empty($dg_tw_ft['gooduser']))
         return true;
 
@@ -289,23 +292,13 @@ error_log(print_r($dg_tw_ft['gooduser'], true));
 
         foreach ($exploded as $word) {
 
-  
-
-
-
             $this_word = trim($word);
             $username = dg_tw_tweet_user($tweet);
-            error_log("gooduser".print_r($dg_tw_ft['gooduser'], true));
-            error_log("word".print_r($word, true));
-            error_log("thisWord".print_r($this_word, true));
-            error_log("username".print_r($username, true));
 
             if (empty($this_word))
                 continue;
 
             if ($username === $this_word){
-                   error_log("thisWord".print_r($this_word, true));
-                   error_log("username".print_r($username, true));
                 return true;
             }
                 
@@ -445,6 +438,7 @@ function dg_tw_options()
     $dg_tw_cats = get_option('dg_tw_cats');
     $dg_tw_ft = get_option('dg_tw_ft');
 
+    //ここ消していいんじゃない？だめかも。要検証
     if (!empty($dg_tw_ft['access_key']) && !empty($dg_tw_ft['access_secret']) && !empty($dg_tw_ft['access_token']) && !empty($dg_tw_ft['access_token_secret'])) {
         $connection = new TwitterOAuth($dg_tw_ft['access_key'], $dg_tw_ft['access_secret'], $dg_tw_ft['access_token'], $dg_tw_ft['access_token_secret']);
     } else {
@@ -459,7 +453,7 @@ function dg_tw_options()
     }
 
     if (isset($_POST['dg_tw_data_update'])) {
-        $dg_temp_array = array();
+        $dg_temp_array = $dg_tw_queryes;//array();
 
         /*
          * Each query string verified to ensure there is no duplicate and save last id　　queryは検索ワードの文字列が羅列されてる
@@ -475,6 +469,8 @@ function dg_tw_options()
                     $dg_temp_array[urlencode($item_query['value'])] = array("value" => $item_query['value'], "tag" => $item_query['tag'], "last_id" => 0, "firts_id" => 0);
                 }
             }
+        }else {
+            $dg_temp_array = array();
         }
 
         update_option('dg_tw_queryes', $dg_temp_array);
@@ -620,6 +616,10 @@ function dg_tw_publish_tweet($tweet, $query = false)
         $tweet_date = date($dg_tw_ft['date_format'], $tweet_time);
         $tweet_content = dg_tw_regexText($tweet->text);
         $post_title = filter_text($tweet, $dg_tw_ft['title_format'], "", $dg_tw_ft['maxtitle'], $dg_tw_ft['title_remove_url']);
+
+        $stra = strcspn($post_title,array("\n\n","\r\n","\r","\n"));
+        $post_title = mb_strstr($post_title, PHP_EOL,true);
+
         $post_content = filter_text($tweet, $dg_tw_ft['body_format'], $tweet_content);
 
         do_action('dg_tw_before_images_placed');
@@ -633,10 +633,6 @@ function dg_tw_publish_tweet($tweet, $query = false)
             $post_content = str_replace('%tweet_images%', $images_list['html'], $post_content);
             
             $post_content .= $images_list['html'];
-            
-            $post_content .= $username;
-            
-            $post_content .= $dg_tw_ft['gooduser'];
 
             do_action('dg_tw_images_placed');
         }
@@ -769,17 +765,18 @@ function filter_text($tweet, $format = "", $content = "", $limit = -1, $remove_u
     $tweet_url = 'https://twitter.com/' . $username . '/status/' . $tweet->id_str;
     $tweet_date = date($dg_tw_ft['date_format'], $tweet_time);
 
-    $result = str_replace('%tweet%', $text, $result);
-    $result = str_replace('%author%', $username, $result);
-    $result = str_replace('%avatar_url%', $tweet->user->profile_image_url, $result);
-    $result = str_replace('%tweet_url%', $tweet_url, $result);
-    $result = str_replace('%tweet_date%', $tweet_date, $result);
+    $result = mb_ereg_replace('%tweet%', $text, $result);
+    $result = mb_ereg_replace('%author%', $username, $result);
+    $result = mb_ereg_replace('%avatar_url%', $tweet->user->profile_image_url, $result);
+    $result = mb_ereg_replace('%tweet_url%', $tweet_url, $result);
+    $result = mb_ereg_replace('%tweet_date%', $tweet_date, $result);
+
 
     if ($remove_url)
         $result = preg_replace("/(?<!a href=\")(?<!src=\")((http|ftp)+(s)?:\/\/[^<>\s]+)/i", "", $result);
 
     if ($limit != -1)
-        $result = substr($result, 0, $limit);
+        $result = mb_substr($result, 0, $limit,"utf-8");
 
     return $result;
 }
