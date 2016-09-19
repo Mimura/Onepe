@@ -2,94 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="949a49e5-90b7-4cee-8ee0-e9ecd431e2e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-config.php" afterPath="$PROJECT_DIR$/wp-config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/debug.log" afterPath="$PROJECT_DIR$/wp-content/debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/index.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/jquery-ui-1.10.4.custom.css" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/jquery-ui-1.10.4.custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/jquery-ui-1.10.4.custom.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/jquery-ui-1.10.4.custom.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/multiple-select.css" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/multiple-select.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/ure-admin.css" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/css/ure-admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/images/index.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/images/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/advertisement.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/advertisement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/ajax-processor.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/ajax-processor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/assign-role.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/assign-role.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/base-lib.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/base-lib.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/bbpress.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/bbpress.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/capabilities-groups-manager.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/capabilities-groups-manager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/capability.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/capability.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/known-js-css-compatibility-issues.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/known-js-css-compatibility-issues.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/protect-admin.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/protect-admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/role-additional-options.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/role-additional-options.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/role-view.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/role-view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/screen-help.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/screen-help.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/task-queue.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/task-queue.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/ure-lib.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/ure-lib.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/user-other-roles.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/user-other-roles.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/user-role-editor.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/user-role-editor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/user-view.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/user-view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/view.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/classes/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/define-constants.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/define-constants.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/index.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/loader.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/loader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/misc-support-stuff.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/misc-support-stuff.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/settings-template.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/includes/settings-template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/index.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/index.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/jquery.multiple.select.js" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/jquery.multiple.select.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/ure-js.js" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/ure-js.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/ure-user-profile-other-roles.js" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/ure-user-profile-other-roles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/ure-users.js" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/js/ure-users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/lang/index.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/lang/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/lang/user-role-editor.pot" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/lang/user-role-editor.pot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/readme.txt" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/uninstall.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/uninstall.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/user-role-editor.php" afterPath="$PROJECT_DIR$/wp-content/plugins/user-role-editor/user-role-editor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/404.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/404.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/archive.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/archive.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/comments.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/comments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/css/custom-min.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/css/custom-min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/css/custom.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/css/customizer-css.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/css/customizer-css.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/css/editor-style.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/css/editor-style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/font-awesome/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/font-awesome/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/wp-content/themes/level/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/css/foundation.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/css/foundation.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/css/foundation.min.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/css/foundation.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.core.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.drilldown.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.drilldown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.dropdown.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.dropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.min.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.offcanvas.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.offcanvas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.sticky.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/foundation/js/foundation.sticky.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/inc/class-tgm-plugin-activation.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/inc/class-tgm-plugin-activation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/inc/custom-header.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/inc/custom-header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/inc/customizer.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/inc/customizer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/inc/extras.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/inc/extras.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/inc/jetpack.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/inc/jetpack.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/inc/template-tags.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/inc/template-tags.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/js/customizer.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/js/customizer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/js/loadscripts.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/js/loadscripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/js/navigation.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/js/navigation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/js/skip-link-focus-fix.js" afterPath="$PROJECT_DIR$/wp-content/themes/level/js/skip-link-focus-fix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/page.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/readme.txt" afterPath="$PROJECT_DIR$/wp-content/themes/level/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/search.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/sidebar.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/single.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/single.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/level/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-none.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-none.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-page.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-search.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-single.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content-single.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/template-parts/content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/template-parts/random-posts.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/template-parts/random-posts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/template-parts/top.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/template-parts/top.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/level/woocommerce.php" afterPath="$PROJECT_DIR$/wp-content/themes/level/woocommerce.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-form.php" afterPath="$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-front-registration.php" afterPath="$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-front-registration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/simple-membership/log-auth.txt" afterPath="$PROJECT_DIR$/wp-content/plugins/simple-membership/log-auth.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/simple-membership/log.txt" afterPath="$PROJECT_DIR$/wp-content/plugins/simple-membership/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/simple-membership/views/add.php" afterPath="$PROJECT_DIR$/wp-content/plugins/simple-membership/views/add.php" />
     </list>
     <ignored path="fastllustsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,45 +29,99 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="wp-config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <file leaf-file-name="class.swpm-admin-registration.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-admin-registration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1371">
-              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1474206949717" expanded="true" signature="1536:1607" ph="SELECT role ${$wpdb-&gt;prefix}" />
+                <marker date="1474206949717" expanded="true" signature="4088:4160" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class.swpm-front-registration.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-front-registration.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="163" column="38" selection-start-line="163" selection-start-column="38" selection-end-line="163" selection-end-column="38" />
+              <folding>
+                <marker date="1474280921289" expanded="true" signature="6258:6343" ph="SELECT membe... ${$wpdb-&gt;prefix}" />
+                <marker date="1474280921289" expanded="true" signature="7293:7364" ph="SELECT role ${$wpdb-&gt;prefix}" />
+                <marker date="1474280921289" expanded="true" signature="11025:11171" ph="SELECT membe... ${$wpdb-&gt;prefix}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/views/add.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="archive.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/gridster-lite/archive.php">
+      <file leaf-file-name="class.swpm-form.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1890">
+            <state relative-caret-position="240">
+              <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+              <folding>
+                <marker date="1474280994414" expanded="true" signature="1797:1877" ph="SELECT count... $" />
+                <marker date="1474280994414" expanded="true" signature="3999:4075" ph="SELECT count... $" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class.swpm-utils.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-utils.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="134" column="74" selection-start-line="134" selection-start-column="69" selection-end-line="134" selection-end-column="74" />
+              <folding>
+                <marker date="1474206950087" expanded="true" signature="5538:5614" ph="SELECT alias... ${$wpdb-&gt;prefix}" />
+                <marker date="1474206950087" expanded="true" signature="6000:6069" ph="SELECT id FR... ${$wpdb-&gt;prefix}" />
+                <marker date="1474206950087" expanded="true" signature="6905:6973" ph="SELECT * FRO... $" />
+                <marker date="1474206950087" expanded="true" signature="7117:7184" ph="SELECT * FRO... $" />
+                <marker date="1474206950087" expanded="true" signature="15891:15953" ph="SELECT membe... ${$member_table}" />
+                <marker date="1474206950087" expanded="true" signature="17129:17216" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
+                <marker date="1474206950087" expanded="true" signature="17732:17831" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/views/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="13" column="58" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loggedin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/views/loggedin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/gridster-lite/image.php">
+      <file leaf-file-name="class.swpm-shortcodes-handler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/shortcode-related/class.swpm-shortcodes-handler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-              <folding>
-                <marker date="1474208958359" expanded="true" signature="663:670" ph="×" />
-                <marker date="1474208958359" expanded="true" signature="1424:1430" ph="←" />
-                <marker date="1474208958359" expanded="true" signature="1566:1572" ph="→" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/gridster-lite/content.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="233">
+              <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -165,6 +138,9 @@
         <option value="$PROJECT_DIR$/wp-config.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/gridster-lite/image.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/gridster-lite/content.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/simple-membership/views/add.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-front-registration.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-form.php" />
       </list>
     </option>
   </component>
@@ -252,7 +228,99 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple-membership" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple-membership" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastllustsite" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple-membership" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -318,18 +386,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474128541763</updated>
-      <workItem from="1474128542975" duration="2707000" />
+      <workItem from="1474128542975" duration="8518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2707000" />
+    <option name="totallyTimeSpent" value="8518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -405,6 +473,208 @@
         <state relative-caret-position="270">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/swpm-compat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/views/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/views/admin_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/simple-wp-membership.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/common/class.swpm-list-table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/admin-includes/class.swpm-payment-buttons-list-table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-members.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1474206949857" expanded="true" signature="3078:3129" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
+            <marker date="1474206949857" expanded="true" signature="6485:6598" ph="SELECT count... " />
+            <marker date="1474206949857" expanded="true" signature="6927:7006" ph="SELECT COUNT... ${$wpdb-&gt;prefix}" />
+            <marker date="1474206949857" expanded="true" signature="8195:8263" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
+            <marker date="1474206949857" expanded="true" signature="8516:8580" ph="SELECT * FRO... $" />
+            <marker date="1474206949857" expanded="true" signature="9202:9270" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
+            <marker date="1474206949857" expanded="true" signature="11966:12056" ph="SELECT email... ${$wpdb-&gt;prefix}" />
+            <marker date="1474206949857" expanded="true" signature="14193:14261" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.simple-wp-membership.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9450">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1474206949691" expanded="true" signature="9459:9535" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
+            <marker date="1474206949691" expanded="true" signature="15700:15768" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
+            <marker date="1474206949691" expanded="true" signature="17987:18056" ph="SELECT id FR... ${$wpdb-&gt;prefix}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-810">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/views/join_us.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/shortcode-related/class.swpm-shortcodes-handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-649">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1474206949721" expanded="true" signature="572:637" ph="SELECT membe... ${$table}" />
+            <marker date="1474206949721" expanded="true" signature="1416:1464" ph="SELECT COUNT... ${$table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-admin-registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1474206949717" expanded="true" signature="1536:1607" ph="SELECT role ${$wpdb-&gt;prefix}" />
+            <marker date="1474206949717" expanded="true" signature="4088:4160" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/views/loggedin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="13" column="58" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-front-form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-utils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="134" column="74" selection-start-line="134" selection-start-column="69" selection-end-line="134" selection-end-column="74" />
+          <folding>
+            <marker date="1474206950087" expanded="true" signature="5538:5614" ph="SELECT alias... ${$wpdb-&gt;prefix}" />
+            <marker date="1474206950087" expanded="true" signature="6000:6069" ph="SELECT id FR... ${$wpdb-&gt;prefix}" />
+            <marker date="1474206950087" expanded="true" signature="6905:6973" ph="SELECT * FRO... $" />
+            <marker date="1474206950087" expanded="true" signature="7117:7184" ph="SELECT * FRO... $" />
+            <marker date="1474206950087" expanded="true" signature="15891:15953" ph="SELECT membe... ${$member_table}" />
+            <marker date="1474206950087" expanded="true" signature="17129:17216" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
+            <marker date="1474206950087" expanded="true" signature="17732:17831" ph="SELECT * FRO... ${$wpdb-&gt;prefix}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-front-registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="163" column="38" selection-start-line="163" selection-start-column="38" selection-end-line="163" selection-end-column="38" />
+          <folding>
+            <marker date="1474280921289" expanded="true" signature="6258:6343" ph="SELECT membe... ${$wpdb-&gt;prefix}" />
+            <marker date="1474280921289" expanded="true" signature="7293:7364" ph="SELECT role ${$wpdb-&gt;prefix}" />
+            <marker date="1474280921289" expanded="true" signature="11025:11171" ph="SELECT membe... ${$wpdb-&gt;prefix}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/views/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/simple-membership/classes/class.swpm-form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="42" column="61" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+          <folding>
+            <marker date="1474280994414" expanded="true" signature="1797:1877" ph="SELECT count... $" />
+            <marker date="1474280994414" expanded="true" signature="3999:4075" ph="SELECT count... $" />
+          </folding>
         </state>
       </provider>
     </entry>
