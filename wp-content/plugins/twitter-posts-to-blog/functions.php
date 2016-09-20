@@ -46,9 +46,11 @@ function dg_tw_load_next_items()
         $dg_tw_data = $connection->get('search/tweets', $parameters);
 
 
+        //新しいのから来るから古いのから投稿するように逆向きに
+        $reverceStatus = array_reverse($dg_tw_data->statuses);
 
 
-        foreach ($dg_tw_data->statuses as $key => $item) {
+        foreach ($reverceStatus as $key => $item) {
             $count++;
 
             if ($dg_tw_ft['exclude_retweets'] && isset($item->retweeted_status))
@@ -76,9 +78,11 @@ function dg_tw_load_next_items()
                 break;
         }
 
+
         //Set the last tweet id
+        //一番新しいついーとIDを保存
         if (count($dg_tw_data->statuses)) {
-            $status =reset($dg_tw_data->statuses);
+            $status = end($reverceStatus);//reset($dg_tw_data->statuses);
             $dg_tw_queryes[urlencode($query['value'])]['last_id'] = $status->id_str;
             update_option('dg_tw_queryes', $dg_tw_queryes);
         }
@@ -622,12 +626,10 @@ function dg_tw_publish_tweet($tweet, $query = false)
         $tweet_content = dg_tw_regexText($tweet->text);
         $post_title = filter_text($tweet, $dg_tw_ft['title_format'], "", $dg_tw_ft['maxtitle'], $dg_tw_ft['title_remove_url']);
 
+        //題名は改行意向を消す。改行がなければそのまま
         $repraceToken = "_ _";
-
-        $post_title = str_replace(array("\r\n","\n\n","\r\r","\n\r","\n","\r"),$repraceToken , $post_title);
-
+        $post_title = str_replace(array("\r\n","\n","\r"),$repraceToken , $post_title);
         $reptitle = mb_strstr($post_title, $repraceToken,true);
-
         if($reptitle){
             $post_title = $reptitle;
         }
