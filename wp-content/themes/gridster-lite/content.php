@@ -4,15 +4,22 @@
  */
 ?>
 
-<div id="post-<?php the_ID(); ?>" <?php post_class("poste"); ?>> <a href="<?php the_permalink(); ?>">
+<div id="post-<?php the_ID(); ?>" <?php post_class("poste"); ?>>
 <?php if ( has_post_thumbnail() ) {
+$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'original' );
+echo '<a href="' . $large_image_url[0] . '" rel="lightbox" >';
+
+?>
+<!--<a href="--><?php //$large_image_url[0]; ?><!--" rel=”lightbox”> --><?php
+
 the_post_thumbnail('post-thumb', array('class' => 'postimg'));
 } else { ?>
+			<a>
 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/defaultthumb.png" class="postimg" alt="<?php the_title(); ?>" />
 
 <?php } ?>
 </a>
-<div class="portfoliooverlay"><a href="<?php the_permalink(); ?>"></a></div>
+<!--<div class="portfoliooverlay"><a href="--><?php //the_permalink(); ?><!--"></a></div>-->
 <h2 class="posttitle"><a href="<?php the_permalink(); ?>" rel="bookmark">
 <?php the_title(); ?>
 </a></h2>
