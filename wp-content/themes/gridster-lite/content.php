@@ -7,8 +7,17 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class("poste"); ?>>
 <?php if ( has_post_thumbnail() ) {
 $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'original' );
-	$title = get_the_title();
-echo '<a href="' . $large_image_url[0] . '" rel="lightbox" title ="'. $title .'">';
+$title = get_the_title();
+$link = get_permalink();//the_permalink();
+	$authorLink =get_author_posts_url(get_the_author_meta( 'ID' ));
+	$authorName =get_the_author();
+//$title = '<a href = ".$title." > tes </a>';
+//echo '<a href="' . $large_image_url[0] . '"  rel="lightbox"  title = "<a href = http://127.0.0.1/fastllustsite >aaa</a>" >';
+	echo '<a href="' . $large_image_url[0] . '"  rel="lightbox" 
+	title = "
+		<a href = '.$link.' >'.$title.'</a><br/>
+	<a href = '.$authorLink.' >'.$authorName.'</a>
+	"     >';
 
 ?>
 <!--<a href="--><?php //$large_image_url[0]; ?><!--" rel=”lightbox”> --><?php
