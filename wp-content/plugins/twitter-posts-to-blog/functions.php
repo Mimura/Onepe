@@ -642,9 +642,17 @@ function dg_tw_publish_tweet($tweet, $query = false)
             do_action('dg_tw_images_placed');
         }
 
+
+
+        $authors =$wpdb->get_results("SELECT *
+                    FROM $wpdb->usermeta
+                    WHERE (meta_key = 'last_name' AND meta_value = '". $tweet->user->screen_name ."')");
+
+        $author = $authors[0];
+
         $post = array(
             'ID' => $dg_tw_start_post->ID,
-            'post_author' => $dg_tw_ft['author'],
+            'post_author' => $author -> user_id,//$dg_tw_ft['author'],
             'post_content' => $post_content,
             'post_name' => dg_tw_slug($post_title),
             'post_status' => strval($dg_tw_publish),
