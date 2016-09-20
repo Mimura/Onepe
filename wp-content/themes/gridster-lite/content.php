@@ -7,7 +7,8 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class("poste"); ?>>
 <?php if ( has_post_thumbnail() ) {
 $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'original' );
-echo '<a href="' . $large_image_url[0] . '" rel="lightbox" >';
+	$title = get_the_title();
+echo '<a href="' . $large_image_url[0] . '" rel="lightbox" title ="'. $title .'">';
 
 ?>
 <!--<a href="--><?php //$large_image_url[0]; ?><!--" rel=”lightbox”> --><?php
