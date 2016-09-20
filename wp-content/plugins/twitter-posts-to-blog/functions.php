@@ -622,8 +622,15 @@ function dg_tw_publish_tweet($tweet, $query = false)
         $tweet_content = dg_tw_regexText($tweet->text);
         $post_title = filter_text($tweet, $dg_tw_ft['title_format'], "", $dg_tw_ft['maxtitle'], $dg_tw_ft['title_remove_url']);
 
-        $stra = strcspn($post_title,array("\n\n","\r\n","\r","\n"));
-        $post_title = mb_strstr($post_title, PHP_EOL,true);
+        $repraceToken = "_ _";
+
+        $post_title = str_replace(array("\r\n","\n\n","\r\r","\n\r","\n","\r"),$repraceToken , $post_title);
+
+        $reptitle = mb_strstr($post_title, $repraceToken,true);
+
+        if($reptitle){
+            $post_title = $reptitle;
+        }
 
         $post_content = filter_text($tweet, $dg_tw_ft['body_format'], $tweet_content);
 
@@ -661,8 +668,8 @@ function dg_tw_publish_tweet($tweet, $query = false)
             'tags_input' => $post_tags,
             'post_type' => $post_type,
             'post_status' => strval($dg_tw_publish),
-            'post_date_gmt' => $tweet_date,
-            'post_date' => date('Y-m-d H:i:s', strtotime($tweet->created_at))
+            'post_date_gmt' => date('Y-m-d H:i:s'),
+            'post_date' => date('Y-m-d H:i:s')
         );
 
         $post = apply_filters('dg_tw_before_post_tweet', $post);
