@@ -324,10 +324,10 @@ function dg_tw_iswhite($tweet)
 
 function dg_tw_loop_start()
 {
-    add_filter("the_author", "dg_tw_the_author");
-    add_filter("get_the_author", "dg_tw_the_author");
-    add_filter("the_author_posts_link", "dg_tw_the_author_link");
-    add_filter("author_link", "dg_tw_the_author_url");
+//    add_filter("the_author", "dg_tw_the_author");
+//    add_filter("get_the_author", "dg_tw_the_author");
+//    add_filter("the_author_posts_link", "dg_tw_the_author_link");
+//    add_filter("author_link", "dg_tw_the_author_url");
 }
 
 /*
@@ -691,7 +691,7 @@ function dg_tw_publish_tweet($tweet, $query = false)
 
             add_post_meta($dg_tw_this_post, 'dg_tw_query', $query_string);
             add_post_meta($dg_tw_this_post, 'dg_tw_id', $tweet->id_str);
-            add_post_meta($dg_tw_this_post, 'dg_tw_author', $username);
+            add_post_meta($dg_tw_this_post, 'dg_tw_author',$author -> user_id /*$username*/);
             add_post_meta($dg_tw_this_post, 'dg_tw_author_avatar', $tweet->user->profile_image_url);
             /* END POST METAS */
         }
