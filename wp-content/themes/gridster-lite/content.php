@@ -29,20 +29,24 @@ the_post_thumbnail('post-thumb', array('class' => 'postimg'));
 
 <?php } ?>
 </a>
-<!--<div class="portfoliooverlay"><a href="--><?php //the_permalink(); ?><!--"></a></div>-->
+<!--<div class="portfoliooverlay"><a href="--><?php $title = mb_substr(get_the_title(),0,10);//the_permalink(); ?><!--"></a></div>-->
 <h2 class="posttitle"><a href="<?php the_permalink(); ?>" rel="bookmark">
-<?php the_title(); ?>
+<?php echo $title; ?>
 </a></h2>
 <p class="postmeta">
-<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
+
+
+<?php //if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 <?php
-				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', 'gridster-lite' ) );
-				if ( $categories_list && gridster_categorized_blog() ) :
-			?>
-<?php //printf( __( '%1$s', 'gridster-lite' ), $categories_list ); ?>
-<?php endif; // End if categories ?>
-<?php endif; // End if 'post' == get_post_type() ?>
+//				/* translators: used between list items, there is a space after the comma */
+//				$categories_list = get_the_category_list( __( ', ', 'gridster-lite' ) );
+//				if ( $categories_list && gridster_categorized_blog() ) :
+//			?>
+<?php ////printf( __( '%1$s', 'gridster-lite' ), $categories_list ); ?>
+<?php //endif; // End if categories ?>
+<?php //endif; // End if 'post' == get_post_type() ?>
+
+
 </p>
 </div>
 <!-- post -->
