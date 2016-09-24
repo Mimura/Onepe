@@ -34,7 +34,7 @@ function dg_tw_load_next_items()
 
     foreach ($dg_tw_queryes as $slug => $query) {
         $parameters = array(
-            'q' => $query['value'],
+            'q' => "\"".$query['value']."\"",
             'since_id' => $query['last_id'],
             'include_entities' => true,
             'count' => $dg_tw_ft['ipp']
