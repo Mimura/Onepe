@@ -40,7 +40,7 @@ the_post_thumbnail('post-thumb', array('class' => 'postimg'));
 				$categories_list = get_the_category_list( __( ', ', 'gridster-lite' ) );
 				if ( $categories_list && gridster_categorized_blog() ) :
 			?>
-<?php printf( __( '%1$s', 'gridster-lite' ), $categories_list ); ?>
+<?php //printf( __( '%1$s', 'gridster-lite' ), $categories_list ); ?>
 <?php endif; // End if categories ?>
 <?php endif; // End if 'post' == get_post_type() ?>
 </p>
