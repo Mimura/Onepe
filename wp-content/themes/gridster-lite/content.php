@@ -2,15 +2,15 @@
 /**
  * @package Gridster
  */
+$title = get_the_title();
+$authorName =get_the_author();
+$authorLink =get_author_posts_url(get_the_author_meta( 'ID' ));
 ?>
 
-<div id="post-<?php the_ID(); ?>" <?php post_class("poste"); ?>>
+<div id="post-<?php the_ID(); ?>" <?php post_class("poste"); ?> xmlns="http://www.w3.org/1999/html">
 <?php if ( has_post_thumbnail() ) {
 $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'original' );
-$title = get_the_title();
 $link = get_permalink();//the_permalink();
-	$authorLink =get_author_posts_url(get_the_author_meta( 'ID' ));
-	$authorName =get_the_author();
 //$title = '<a href = ".$title." > tes </a>';
 //echo '<a href="' . $large_image_url[0] . '"  rel="lightbox"  title = "<a href = http://127.0.0.1/fastllustsite >aaa</a>" >';
 	echo '<a href="' . $large_image_url[0] . '"  rel="lightbox" 
@@ -29,13 +29,29 @@ the_post_thumbnail('post-thumb', array('class' => 'postimg'));
 
 <?php } ?>
 </a>
-<!--<div class="portfoliooverlay"><a href="--><?php $title = mb_substr(get_the_title(),0,10);//the_permalink(); ?><!--"></a></div>-->
+<!--<div class="portfoliooverlay"><a href="--><?php //the_permalink(); ?><!--"></a></div>-->
+	<?php
+    //変数定義
+	$titleMini = mb_substr($title,0,10);
+	$authorNameMini = mb_substr($authorName,0,10);
+
+    $meta = get_post_meta(get_the_ID());
+	$avator = $meta['dg_tw_author_avatar'];
+
+
+	?>
+
 <h2 class="posttitle"><a href="<?php the_permalink(); ?>" rel="bookmark">
-<?php echo $title; ?>
+
+
+<?php echo $titleMini; ?>
 </a></h2>
 <p class="postmeta">
-
-
+<?php if($avator): ?>
+	</br>
+	<img border="1" width="30" height="30" alt="ユーザーアイコン" src="<?php echo $avator[0]; ?>" >
+	<a href = <?php echo $authorLink; ?>><?php echo $authorNameMini ;?></a>
+<?php endif; //$avatorがからじゃなければ のとじ?>
 <?php //if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 <?php
 //				/* translators: used between list items, there is a space after the comma */
