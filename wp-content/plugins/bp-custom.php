@@ -19,7 +19,7 @@ function works_nav() {
 }
 
 function works_title() {
-    echo '実績一覧';//追加したユーザーページのタイトル
+    echo '実績一覧aaa';//追加したユーザーページのタイトル
 }
 
 function works_content() {
