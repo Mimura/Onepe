@@ -132,14 +132,14 @@ class SwpmInitTimeTasks {
     private function register_member() {
         $registration = filter_input(INPUT_POST, 'swpm_registration_submit');
         if (!empty($registration)) {
-            SwpmFrontRegistration::get_instance()->register_front_end();
+            SwpmFrontRegistration::get_instance()->register();
         }
     }
 
     private function edit_profile() {
         $swpm_editprofile_submit = filter_input(INPUT_POST, 'swpm_editprofile_submit');
         if (!empty($swpm_editprofile_submit)) {
-            SwpmFrontRegistration::get_instance()->edit_profile_front_end();
+            SwpmFrontRegistration::get_instance()->edit();
             //TODO - do a redirect?
         }
     }
