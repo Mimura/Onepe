@@ -155,10 +155,9 @@ class SwpmFrontRegistration extends SwpmRegistration {
         }
 
         $wp_user_info = array();
-        $wp_user_info['user_nicename'] =  $member_info['first_name'];//implode('-', explode(' ', $member_info['user_name']));
+            $wp_user_info['user_nicename'] =  $member_info['last_name'];//これもついったーId usertableから直に見れるはず//implode('-', explode(' ', $member_info['user_name']));
         $wp_user_info['display_name'] =  $member_info['first_name'];//$member_info['user_name'];
         $wp_user_info['user_email'] = $member_info['email'];
-        $wp_user_info['nickname'] = $member_info['first_name'];
         $wp_user_info['first_name'] = $member_info['first_name'];
         $wp_user_info['last_name'] = $member_info['last_name'];//これがtwitterID
         $wp_user_info['user_login'] =  $member_info['user_name'];
