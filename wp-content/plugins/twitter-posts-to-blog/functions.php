@@ -671,7 +671,8 @@ function dg_tw_publish_tweet($tweet, $query = false)
             'post_type' => $post_type,
             'post_status' => strval($dg_tw_publish),
             'post_date_gmt' => date('Y-m-d H:i:s'),
-            'post_date' => date('Y-m-d H:i:s')
+            'post_date' => date('Y-m-d H:i:s'),
+            'comment_status' => 'open'
         );
 
         $post = apply_filters('dg_tw_before_post_tweet', $post);
@@ -757,10 +758,14 @@ function dg_tw_regexText($string)
 
     if ($dg_tw_ft['notags']) {
         $string = preg_replace('/#[\\d\\w]+/', '', $string);
+        $string = preg_replace('/#[ぁ-んァ-ヶー一-龠]+/u', '', $string);
     }
 
     if ($dg_tw_ft['link_urls']) {
         $string = preg_replace("/(?<!a href=\")(?<!src=\")((http|ftp)+(s)?:\/\/[^<>\s]+)/i", "<a rel=\"nofollow\" href=\"\\0\" target=\"_blank\">\\0</a>", $string);
+    }else{
+        $string = preg_replace("/(?<!a href=\")(?<!src=\")((http|ftp)+(s)?:\/\/[^<>\s]+)/i", "", $string);
+
     }
 
     if ($dg_tw_ft['link_mentions']) {
