@@ -1150,8 +1150,7 @@ function comments_open( $post_id = null ) {
 
 	$_post = get_post($post_id);
 
-	//すべての投稿でコメントをオンしているよわざわざ
-	$open = true;//( 'open' == $_post->comment_status );
+	$open = ( 'open' == $_post->comment_status );
 
 	/**
 	 * Filter whether the current post is open for comments.
@@ -1249,7 +1248,6 @@ function wp_comment_form_unfiltered_html_nonce() {
  *                                  Default false.
  */
 function comments_template( $file = '/comments.php', $separate_comments = false ) {
-	//すべての投稿でコメントを受け取るように設定してあるのいやならでこのスクリプトのcomments_open(）をもどしてね
 	global $wp_query, $withcomments, $post, $wpdb, $id, $comment, $user_login, $user_ID, $user_identity, $overridden_cpage;
 
 	if ( !(is_single() || is_page() || $withcomments) || empty($post) )
