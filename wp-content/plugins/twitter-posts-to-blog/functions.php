@@ -257,9 +257,6 @@ function dg_tw_iswhite($tweet)
 {
 
     global $dg_tw_queryes, $dg_tw_publish, $dg_tw_tags, $dg_tw_cats, $dg_tw_ft, $wpdb;
-    $usernames = $wpdb->get_results("SELECT ID FROM $wpdb->users WHERE ID!=1 ORDER BY ID");
-    if (empty($dg_tw_ft['badwords']) && empty($dg_tw_ft['baduser'])&& empty($usernames))
-        return true;
 
     if (!empty($dg_tw_ft['badwords'])) {
         $exploded = explode(',', $dg_tw_ft['badwords']);
@@ -290,29 +287,20 @@ function dg_tw_iswhite($tweet)
         }
     }
 
+    //絶対if入る
+    //twitterIdが全ユーザのuser_nicenameに含まれていなければfalseを返す（投稿しない）
 
+    $usernames = $wpdb->get_results("SELECT ID FROM $wpdb->users WHERE ID!=1 ORDER BY ID");
 
     if (!empty($usernames)) {
-//   if (!empty($dg_tw_ft['gooduser'])) {
-//        $exploded = explode(',', $dg_tw_ft['gooduser']);
 
+        $postTwitterId = dg_tw_tweet_user($tweet);
+        $q = "SELECT COUNT(*) FROM $wpdb->users WHERE (user_nicename ='". $postTwitterId ."')";
+        $userCount  =$wpdb->get_var($q);
 
-        foreach ($usernames as $username) {
-       // foreach ($exploded as $word) {
-            $user_info = get_userdata($username->ID);
-
-            $this_word = $user_info -> last_name;//trim($word);
-            $username = dg_tw_tweet_user($tweet);
-
-            if (empty($this_word))
-                continue;
-
-            if ($username === $this_word){
-                return true;
-            }
-                
+        if($userCount <= 0){
+            return false;
         }
-        return false;
     }
 
     return true;
