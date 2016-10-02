@@ -51,6 +51,14 @@ $post_preview_animation = get_theme_mod('portfolio_post_preview_animation', 'ani
 				<?php get_template_part('content', 'header-simple'); ?>
 			<?php endif; ?>
 		<?php
+
+			//if(get_theme_mod('portfolio_meta_type', 'tags') == 'title') {
+			$title = '<a href="'.get_permalink().'">' . get_the_title() . '</a>';
+			if ($title) {
+				echo '<ul class="tags-links title-links"><li>' . $title . '</li></ul>';
+			}
+			//}
+
 			if(get_theme_mod('portfolio_show_tags', '1') == '1') {
 				if(get_theme_mod('portfolio_meta_type', 'tags') == 'tags') {
 					$tag_list = get_the_tag_list('<ul class="tags-links"><li>',', </li><li>','</li></ul>');
@@ -66,12 +74,7 @@ $post_preview_animation = get_theme_mod('portfolio_post_preview_animation', 'ani
 					}
 				}
 				
-				if(get_theme_mod('portfolio_meta_type', 'tags') == 'title') {
-					$title = '<a href="'.get_permalink().'">' . get_the_title() . '</a>';
-					if ($title) {
-						echo '<ul class="tags-links title-links"><li>' . $title . '</li></ul>';
-					}
-				}
+
 				
 				if(get_theme_mod('portfolio_meta_type', 'tags') == 'date') {
 					$date_format = esc_html(get_the_date('M, j, Y'));  
