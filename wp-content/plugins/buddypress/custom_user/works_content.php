@@ -9,7 +9,7 @@ $user_id = $bp->displayed_user->id;
 		<div id="content" class="site-content archive" role="main">
 <?php while(have_posts()): the_post();
     //include TEMPLATEPATH . 'template-name.php';
-    include(get_theme_root() . '/gk-portfolio/content-archive.php');
+    include(get_theme_root() . '/gk-child/content-archive.php');
     //get_template_part( 'content-archive', get_post_format() );
     ?>
 <?php endwhile; ?>
