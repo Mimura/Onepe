@@ -616,8 +616,13 @@ function dg_tw_publish_tweet($tweet, $query = false)
                     GROUP BY post_id";
 
     $postid = $wpdb->get_results($querystr);
-    $author_tag = (!empty($dg_tw_ft['authortag']) ) ? ',' . $username : '';
-    $post_tags = htmlspecialchars($dg_tw_tags . ',' . $current_query['tag'] . $author_tag);
+    //$author_tag = (!empty($dg_tw_ft['authortag']) ) ? ',' . $username : '';
+    //$post_tags = htmlspecialchars($dg_tw_tags . ',' . $current_query['tag'] . $author_tag);
+
+    preg_match_all('/tag:([\\d\\w\\ぁ-んァ-ヶー一-龠\\０-９\\、。]+)/',$tweet->text,$tagsArray);
+    $post_tags = implode(",",$tagsArray[1]);
+
+
 
     if (!count($postid)) {
         $tweet_date = date($dg_tw_ft['date_format'], $tweet_time);
@@ -758,9 +763,12 @@ function dg_tw_regexText($string)
     }
 
     if ($dg_tw_ft['notags']) {
-        $string = preg_replace('/#[\\d\\w]+/', '', $string);
-        $string = preg_replace('/#[ぁ-んァ-ヶー一-龠]+/u', '', $string);
+        $string = preg_replace('/#[\\d\\w\\ぁ-んァ-ヶー一-龠\\０-９\\、。]+/', '', $string);
     }
+
+    //tag:は削除
+    $string = preg_replace('/tag:[\\d\\w\\ぁ-んァ-ヶー一-龠\\０-９\\、。]+/', '', $string);
+    $string = preg_replace('/tag:/', '', $string);
 
     if ($dg_tw_ft['link_urls']) {
         $string = preg_replace("/(?<!a href=\")(?<!src=\")((http|ftp)+(s)?:\/\/[^<>\s]+)/i", "<a rel=\"nofollow\" href=\"\\0\" target=\"_blank\">\\0</a>", $string);
