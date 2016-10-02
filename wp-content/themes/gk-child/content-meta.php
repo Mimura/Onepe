@@ -38,7 +38,7 @@
 				}
 			}
 ?>
-			<a href=<?php  echo bp_core_get_userlink(get_the_author_meta('ID'), false, true );?>>tetetef </a>
+			<a href=<?php  echo bp_core_get_userlink(get_the_author_meta('ID'), false, true );?>><?php echo get_the_author(); ?> </a>
 
 
 			<?php
