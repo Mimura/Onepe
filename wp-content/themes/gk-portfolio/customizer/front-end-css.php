@@ -41,7 +41,7 @@ function portfolio_customizer_css() {
     	.attachment #primary,
     	.site-content.archive #gk-search,
     	.search-no-results .page-content {
-    		width: <?php echo get_theme_mod('portfolio_content_width', ""); ?>px;
+    		width: <?php echo get_theme_mod('portfolio_content_width', 700); ?>px;
     	}
     
     	<?php if(get_theme_mod('portfolio_word_break', '0') == '1') : ?>

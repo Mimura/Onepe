@@ -11,3 +11,8 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twenty-fifteen-child
 */
+#primary.no-comments-area {
+    /*幅がおかしいと思ったらここを治す*/
+    width: auto;
+    margin-bottom: 40px;
+}
