@@ -3,6 +3,7 @@
 global $bp;
 $user_id = $bp->displayed_user->id;
 ?>
+<?php do_shortcode('[favorite-authors-list]'); ?>
 <?php $paged = get_query_var('paged'); ?>
 <!--query_postsで、author=ユーザーID　で現在表示中のユーザーの記事一覧が取得可能-->
 <?php query_posts("author={$user_id}&posts_per_page=10&cat=0&paged={$paged}"); ?>

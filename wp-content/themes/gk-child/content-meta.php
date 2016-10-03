@@ -3,7 +3,8 @@
 		Template for the content meta
 	*/
 ?>
-<?php if(
+<?php fav_authors_link();
+if(
 	get_theme_mod('portfolio_post_show_date', '1') == '1' ||
 	get_theme_mod('portfolio_post_show_category', '1') == '1'
 ) : ?>

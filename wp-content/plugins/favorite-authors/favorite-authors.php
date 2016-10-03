@@ -52,6 +52,7 @@ function fav_authors_get_user_id(){
     return $current_user->ID;
 }
 
+
 // Add favorite authors to current user's usermeta
 function fav_author_add_fav_author(){
     check_ajax_referer( 'fav_authors_obj_ajax', 'security' );
@@ -190,7 +191,7 @@ add_action( 'wp_ajax_fav_au_pagi', 'fav_authors_pagi' );
     Shortcode [favorite-authors-list] function
 */
 function fav_authors_get_list(){
-    $fav_author_list = get_user_option( 'favorite-authors', fav_authors_get_user_id() );
+    $fav_author_list = get_user_option( 'favorite-authors', $GLOBALS['bp']->displayed_user->id /*fav_authors_get_user_id()*/ );
     //var_dump( $fav_author_list );
 
     $page = ! empty( $_POST['page'] ) ? (int) $_POST['page'] : 1;
