@@ -1,1 +1,1 @@
-<?php do_shortcode('[favorite-authors-list]'); ?>
+<?php do_shortcode('[favorite-authors-list-bp-profile]'); ?>

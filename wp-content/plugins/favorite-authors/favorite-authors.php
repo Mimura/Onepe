@@ -190,8 +190,8 @@ add_action( 'wp_ajax_fav_au_pagi', 'fav_authors_pagi' );
 **  Get favorite author list by current user
     Shortcode [favorite-authors-list] function
 */
-function fav_authors_get_list(){
-    $fav_author_list = get_user_option( 'favorite-authors', $GLOBALS['bp']->displayed_user->id /*fav_authors_get_user_id()*/ );
+function fav_authors_get_list($id){
+    $fav_author_list = get_user_option( 'favorite-authors',$id  );
     //var_dump( $fav_author_list );
 
     $page = ! empty( $_POST['page'] ) ? (int) $_POST['page'] : 1;
@@ -249,13 +249,29 @@ function fav_authors_list(){
     
     // Show only to logged in users
     if ( is_user_logged_in() ) {
-        $output = fav_authors_get_list();
+        $output = fav_authors_get_list(fav_authors_get_user_id());
         return $output;
     }else{
         echo '<p class="login-fav_authors">Please <a href="'.wp_login_url().'" title="Login">Login</a> to continue...</p>';
     }
 }
 add_shortcode('favorite-authors-list', 'fav_authors_list');
+
+function fav_authors_list_in_buddypress_profile(){
+    // Load CSS & JS files
+    global $fav_authors_load_assets;
+    $fav_authors_load_assets = true;
+
+    // Show only to logged in users
+    if ( is_user_logged_in() ) {
+        $output = fav_authors_get_list($GLOBALS['bp']->displayed_user->id);
+        return $output;
+    }else{
+        echo '<p class="login-fav_authors">Please <a href="'.wp_login_url().'" title="Login">Login</a> to continue...</p>';
+    }
+}
+add_shortcode('favorite-authors-list-bp-profile', 'fav_authors_list');
+
 
 // Add plug in link to setting page
 function fav_authors_action_links( $links ){
