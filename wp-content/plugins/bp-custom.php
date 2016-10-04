@@ -101,7 +101,7 @@ function favorite_posts_content() {
     include_once "buddypress/custom_user/favorite_posts_content.php";
 }
 
-
+define( 'BP_DEFAULT_COMPONENT', 'works' );
 
 
 /**
