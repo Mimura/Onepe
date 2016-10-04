@@ -1,0 +1,1 @@
+<?php do_shortcode('[favorite-authors-list]'); ?>
