@@ -26,8 +26,7 @@ $video_code = portfolio_video_code();
 	<a href = '.$authorLink.' >'.$authorName.'</a>
 	"     >';
 
-		echo 	"<img src=\"". $large_image_url[0] ."\" alt=\"アイキャッチ\" style=\"width:auto;height:100%;\" />";
-//			the_post_thumbnail(is_singular() ? 'full' : 'gk-portfolio-size');
+		echo 	"<span class=\"cover\"  style=\"background-image: url(". $large_image_url[0] .")\"/></span>";
 
 			?>
 
