@@ -262,14 +262,10 @@ function fav_authors_list_in_bp_profile(){
     global $fav_authors_load_assets;
     $fav_authors_load_assets = true;
 
-    // Show only to logged in users
-    if ( is_user_logged_in() ) {
-        $id = $GLOBALS['bp']->displayed_user->id;
-        $output = fav_authors_get_list($GLOBALS['bp']->displayed_user->id);
-        return $output;
-    }else{
-        echo '<p class="login-fav_authors">Please <a href="'.wp_login_url().'" title="Login">Login</a> to continue...</p>';
-    }
+    $id = $GLOBALS['bp']->displayed_user->id;
+    $output = fav_authors_get_list($GLOBALS['bp']->displayed_user->id);
+    return $output;
+
 }
 add_shortcode('favorite-authors-list-bp-profile', 'fav_authors_list_in_bp_profile');
 
