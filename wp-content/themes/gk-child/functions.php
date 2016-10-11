@@ -57,11 +57,14 @@ function remove_menus () {
 
         remove_menu_page('wpcf7'); //Contact Form 7
         remove_menu_page('duplicator');//dupricator
+        remove_menu_page( 'edit.php?post_type=page' );
+
         global $menu;
         unset($menu[2]); // ダッシュボード
 //unset($menu[4]); // メニューの線1
 //unset($menu[5]); // 投稿
 //unset($menu[10]); // メディア
+
         unset($menu[15]); // リンク
         unset($menu[20]); // ページ
         unset($menu[25]); // コメント
@@ -93,7 +96,7 @@ remove_meta_box( 'postexcerpt' , 'post' , 'normal' ); /* 投稿の抜粋 */
 remove_meta_box( 'postexcerpt' , 'page' , 'normal' ); /* 固定ページの抜粋 */
 remove_meta_box( 'commentsdiv' , 'post' , 'normal' ); /* 投稿のコメント */
 remove_meta_box( 'commentsdiv' , 'page' , 'normal' ); /* 固定ページのコメント */
-        remove_meta_box( 'tagsdiv-post_tag' , 'post' , 'side' ); /* 投稿のタグ */
+        //remove_meta_box( 'tagsdiv-post_tag' , 'post' , 'side' ); /* 投稿のタグ */
 remove_meta_box( 'tagsdiv-post_tag' , 'page' , 'side' ); /* 固定ページのタグ */
 remove_meta_box( 'trackbacksdiv' , 'post' , 'normal' ); /* 投稿のトラックバック */
 remove_meta_box( 'trackbacksdiv' , 'page' , 'normal' ); /* 固定ページのトラックバック */
@@ -115,15 +118,15 @@ add_filter('pre_site_transient_update_core', '__return_zero');
 remove_action('wp_version_check', 'wp_version_check');
 remove_action('admin_init', '_maybe_update_core');
 // 管理バーにログアウトを追加
-function add_new_item_in_admin_bar() {
-    global $wp_admin_bar;
-    $wp_admin_bar->add_menu(array(
-        'id' => 'new_item_in_admin_bar',
-        'title' => __('ログアウト'),
-        'href' => wp_logout_url()
-    ));
-}
-add_action('wp_before_admin_bar_render', 'add_new_item_in_admin_bar');
+//function add_new_item_in_admin_bar() {
+//    global $wp_admin_bar;
+//    $wp_admin_bar->add_menu(array(
+//        'id' => 'new_item_in_admin_bar',
+//        'title' => __('ログアウト'),
+//        'href' => wp_logout_url()
+//    ));
+//}
+//add_action('wp_before_admin_bar_render', 'add_new_item_in_admin_bar');
 
 
 function my_custom_login_logo() {
@@ -140,10 +143,34 @@ function custom_columns($columns) {
     return $columns;
 }
 add_filter( 'manage_posts_columns', 'custom_columns' );
+
+
 // 管理バーの項目を非表示
-function remove_admin_bar_menu( $wp_admin_bar ) {
-    $wp_admin_bar->remove_menu( 'wp-logo' ); // WordPressシンボルマーク
-    $wp_admin_bar->remove_menu('my-account'); // マイアカウント
+function remove_admin_bar_menu( $wp_admin_bar )
+{
+    if (!current_user_can('level_10')) {
+        $wp_admin_bar->remove_menu('wp-logo'); // WordPressシンボルマーク
+       // $wp_admin_bar->remove_menu('my-account'); // マイアカウント
+        $wp_admin_bar->remove_menu('site-name');// サイト名
+        $wp_admin_bar->remove_menu('view-site'); // サイト名 -> サイトを表示
+        $wp_admin_bar->remove_menu( 'dashboard' );    // サイト名 -> ダッシュボード (公開側)
+        $wp_admin_bar->remove_menu( 'comments' );     // コメント
+        $wp_admin_bar->remove_menu( 'updates' );      // 更新
+        $wp_admin_bar->remove_menu('new-content'); // 新規
+        $wp_admin_bar->remove_menu('new-post'); // 新規 -> 投稿
+        $wp_admin_bar->remove_menu('new-content'); // 新規
+        $wp_admin_bar->remove_menu('post'); // 新規 -> 投稿
+        $wp_admin_bar->remove_menu('media-new'); // 新規 -> メディア
+        $wp_admin_bar->remove_menu('new-link'); // 新規 -> リンク
+        $wp_admin_bar->remove_menu('new-page'); // 新規 -> 固定ページ
+        $wp_admin_bar->remove_menu('new-user'); // 新規 -> ユーザー
+        $wp_admin_bar->remove_menu( 'new-media' );    // 新規 -> メディア
+        $wp_admin_bar->remove_menu( 'user-info' );    // マイアカウント -> プロフィール
+        $wp_admin_bar->remove_menu( 'edit-profile' ); // マイアカウント -> プロフィール編集
+        $wp_admin_bar->remove_menu( 'logout' );       // マイアカウント -> ログアウト
+        $wp_admin_bar->remove_menu( 'search' );       // 検索 (公開側)
+        $wp_admin_bar->remove_menu('logout'); // マイアカウント -> ログアウト
+    }
 }
 add_action( 'admin_bar_menu', 'remove_admin_bar_menu', 70 );
 //入力画面 現在の状況　のWordPress表示を消す
