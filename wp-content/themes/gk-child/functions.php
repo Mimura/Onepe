@@ -159,7 +159,8 @@ function remove_admin_bar_menu( $wp_admin_bar )
         $wp_admin_bar->remove_menu('new-content'); // 新規
         $wp_admin_bar->remove_menu('new-post'); // 新規 -> 投稿
         $wp_admin_bar->remove_menu('new-content'); // 新規
-        $wp_admin_bar->remove_menu('post'); // 新規 -> 投稿
+        $wp_admin_bar->remove_menu('edit-posts'); // 新規 -> 投稿
+        $wp_admin_bar->remove_menu('new-post'); // 新規 -> 投稿
         $wp_admin_bar->remove_menu('media-new'); // 新規 -> メディア
         $wp_admin_bar->remove_menu('new-link'); // 新規 -> リンク
         $wp_admin_bar->remove_menu('new-page'); // 新規 -> 固定ページ
@@ -172,6 +173,12 @@ function remove_admin_bar_menu( $wp_admin_bar )
         $wp_admin_bar->remove_menu('logout'); // マイアカウント -> ログアウト
     }
 }
+
+function my_function_admin_bar($content) {
+    return ( current_user_can("administrator") ) ? $content : false;
+}
+add_filter( 'show_admin_bar' , 'my_function_admin_bar');
+
 add_action( 'admin_bar_menu', 'remove_admin_bar_menu', 70 );
 //入力画面 現在の状況　のWordPress表示を消す
 function my_admin_print_styles(){
