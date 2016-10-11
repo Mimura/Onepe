@@ -631,8 +631,9 @@ function wp_admin_bar_new_content_menu( $wp_admin_bar ) {
 	if ( isset( $cpts['post'] ) && current_user_can( $cpts['post']->cap->create_posts ) )
 		$actions[ 'post-new.php' ] = array( $cpts['post']->labels->name_admin_bar, 'new-post' );
 
-	if ( isset( $cpts['attachment'] ) && current_user_can( 'upload_files' ) )
-		$actions[ 'media-new.php' ] = array( $cpts['attachment']->labels->name_admin_bar, 'new-media' );
+	//新規メディアを消したかった。必要なら復活させて
+//	if ( isset( $cpts['attachment'] ) && current_user_can( 'upload_files' ) )
+//		$actions[ 'media-new.php' ] = array( $cpts['attachment']->labels->name_admin_bar, 'new-media' );
 
 	if ( current_user_can( 'manage_links' ) )
 		$actions[ 'link-add.php' ] = array( _x( 'Link', 'add new from admin bar' ), 'new-link' );
