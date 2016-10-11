@@ -27,10 +27,10 @@ define('DB_NAME', 'fastIlust_wp');
 define('DB_USER', 'root');
 
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'root');
 
 /** MySQL のホスト名 */
-define('DB_HOST', '127.0.0.1');
+define('DB_HOST', 'localhost');
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define('DB_CHARSET', 'utf8');
@@ -95,3 +95,6 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+//更新出来るように。本番は消す。
+define('FS_METHOD','direct');
