@@ -6,6 +6,14 @@ function theme_enqueue_styles() {
 
 }
 
+//ショートコード
+function show_bp_profile_login_user()
+{
+    $user = wp_get_current_user();
+
+    echo "<a href=" . bp_core_get_userlink($user->ID, false, true) . "> マイプロフィール </a>";
+}
+add_shortcode('show_bp_profile_login_user', 'show_bp_profile_login_user');
 
 /*
 * メディアの抽出条件にログインユーザーの絞り込み条件を追加する
