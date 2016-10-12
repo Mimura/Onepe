@@ -24,5 +24,6 @@ if(!empty($favorite_post_ids)):
 <?php else :?>
     <ul class="list"><li>まだ投稿はありません。</li></ul>
 <?php endif; ?>
+<?php portfolio_paging_nav(); ?>
 <?php wp_reset_query(); ?>
 

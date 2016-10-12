@@ -15,4 +15,5 @@ $user_id = $bp->displayed_user->id;
     <?php endwhile; ?>
 
 </div>
+<?php portfolio_paging_nav(); ?>
 <?php wp_reset_query(); ?>
