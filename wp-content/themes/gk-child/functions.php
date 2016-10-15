@@ -42,7 +42,8 @@ function define_doing_query_attachment_const() {
         define( 'DOING_QUERY_ATTACHMENT', true );
     }
 }
-get_currentuserinfo();
+
+
 if($current_user->user_level < 10){
     add_action( 'pre_get_posts', 'display_only_self_uploaded_medias' );
     add_action( 'wp_ajax_query-attachments', 'define_doing_query_attachment_const', 0 );
@@ -149,13 +150,6 @@ remove_action('admin_init', '_maybe_update_core');
 //}
 //add_action('wp_before_admin_bar_render', 'add_new_item_in_admin_bar');
 
-
-function my_custom_login_logo() {
-    echo '<style type="text/css">.login h1 a { background-image:url(/images/[画像ファイル名]);background-size: ***px ***px;
-width:***px; height:px;***
-}</style>';
-}
-add_action('login_head', 'my_custom_login_logo');
 //投稿リストから「すべて」などを消す
 function custom_columns($columns) {
     if (!current_user_can('level_10')) {
@@ -214,6 +208,14 @@ function custom_admin_footer() {
 }
 add_filter('admin_footer_text', 'custom_admin_footer');
 
+add_action( 'admin_init', 'disable_admin_pages' );
+function disable_admin_pages() {
+    if(!current_user_can('administrator')){
+        $redirect_url = get_option('home');
+        header("Location: ".$redirect_url);
+        exit;
+    }
+}
 
 //function disable_drag_metabox() {
 //    wp_deregister_script('postbox');
