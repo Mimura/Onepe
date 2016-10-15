@@ -98,14 +98,14 @@ function remove_menus () {
         unset($menu[90]); // メニューの線3
     }
 }
-
-function remove_jetpack () {
-    if (!current_user_can('level_10')) {
-        remove_menu_page('jetpack','jetpack');//jetpack
-    }
-}
-
-add_action('admin_init', 'remove_jetpack');
+//
+//function remove_jetpack () {
+//    if (!current_user_can('level_10')) {
+//        remove_menu_page('jetpack','jetpack');//jetpack
+//    }
+//}
+//
+//add_action('admin_init', 'remove_jetpack');
 add_action('admin_menu', 'remove_menus');
 //入力画面のカテゴリとタグの設定を非表示に
 if (!current_user_can('level_10')) {
@@ -215,10 +215,10 @@ function custom_admin_footer() {
 add_filter('admin_footer_text', 'custom_admin_footer');
 
 
-function disable_drag_metabox() {
-    wp_deregister_script('postbox');
-}
-add_action( 'admin_init', 'disable_drag_metabox' );
+//function disable_drag_metabox() {
+//    wp_deregister_script('postbox');
+//}
+//add_action( 'admin_init', 'disable_drag_metabox' );
 
 
 /**
