@@ -53,10 +53,10 @@ $post_preview_animation = get_theme_mod('portfolio_post_preview_animation', 'ani
 		<?php
 
 			//if(get_theme_mod('portfolio_meta_type', 'tags') == 'title') {
-			$title = '<a href="'.get_permalink().'">' . get_the_title() . '</a>';
-			if ($title) {
-				echo '<ul class="tags-links title-links"><li>' . $title . '</li></ul>';
-			}
+//			$title = '<a href="'.get_permalink().'">' . get_the_title() . '</a>';
+//			if ($title) {
+//				echo '<ul class="tags-links title-links"><li>' . $title . '</li></ul>';
+//			}
 			//}
 
 			if(get_theme_mod('portfolio_show_tags', '1') == '1') {
