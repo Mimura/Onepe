@@ -33,7 +33,13 @@
     line-height: 64px;
     margin: 0;
     text-transform: uppercase;
-    background-color: #A657AE;
-    color: #ffffff;
+    background-color: #000000;
+    color: #b903b9
 }
 
+.site-header {
+    background: #000000;
+    color: #000;
+    min-height: 64px;
+    text-align: center;
+}
