@@ -16,14 +16,14 @@ $video_code = portfolio_video_code();
 
 			$title = get_the_title();
 			$authorName =get_the_author();
-			$authorLink =get_author_posts_url(get_the_author_meta( 'ID' ));
+			$authorLink = bp_core_get_userlink(get_the_author_meta('ID'), false, true );
 			$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'original' );
 			$link = get_permalink();//the_permalink();
 
 			echo '<a href="' . $large_image_url[0] . '"  rel="lightbox"
 	title = "
-		<a href = '.$link.' >'.$title.'</a><br/>
-	<a href = '.$authorLink.' >'.$authorName.'</a>
+		<a href = '.$link.'   target=\'_blank\' >'.$title.'</a><br/>
+	<a href = '.$authorLink.'   target=\'_blank\' >'.$authorName.'</a>
 	"     >';
 
 		echo 	"<span class=\"cover\"  style=\"background-image: url(". $large_image_url[0] .")\"/></span>";
