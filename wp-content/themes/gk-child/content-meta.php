@@ -3,7 +3,7 @@
 		Template for the content meta
 	*/
 ?>
-<?php fav_authors_link();
+<?php
 if(
 	get_theme_mod('portfolio_post_show_date', '1') == '1' ||
 	get_theme_mod('portfolio_post_show_category', '1') == '1'
@@ -39,7 +39,8 @@ if(
 				}
 			}
 ?>
-			<a href=<?php  echo bp_core_get_userlink(get_the_author_meta('ID'), false, true );?>><?php echo get_the_author(); ?> </a>
+			<a href=<?php  echo bp_core_get_userlink(get_the_author_meta('ID'), false, true );?>><?php echo get_the_author();?> </a>
+			<a><?php fav_authors_link(); ?></a>
 
 
 			<?php
