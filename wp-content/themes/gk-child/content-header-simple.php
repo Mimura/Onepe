@@ -15,6 +15,9 @@ $video_code = portfolio_video_code();
 			<?php
 
 			$title = get_the_title();
+			if(isset($title)) {
+				$title = "noTitle";
+			}
 			$authorName =get_the_author();
 			$authorLink = bp_core_get_userlink(get_the_author_meta('ID'), false, true );
 			$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'original' );
