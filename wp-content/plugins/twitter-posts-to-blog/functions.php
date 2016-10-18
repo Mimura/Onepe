@@ -620,7 +620,11 @@ function dg_tw_publish_tweet($tweet, $query = false)
     //$post_tags = htmlspecialchars($dg_tw_tags . ',' . $current_query['tag'] . $author_tag);
 
     preg_match_all('/tag:([\\d\\w\\ぁ-んァ-ヶー一-龠\\０-９\\、。]+)/',$tweet->text,$tagsArray);
+    preg_match_all('/#([\\d\\w\\ぁ-んァ-ヶー一-龠\\０-９\\、。]+)/',$tweet->text,$sharpTagsArray);
+    $sharpTags = implode(",",$sharpTagsArray[1]);
     $post_tags = implode(",",$tagsArray[1]);
+
+    $post_tags .= $sharpTags;
 
 
 
