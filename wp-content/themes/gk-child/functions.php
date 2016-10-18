@@ -28,6 +28,16 @@ function show_tag_archive($tagArgs)
 }
 add_shortcode('show_tag_archive', 'show_tag_archive');
 
+//ショートコード
+function show_the_author_archive()
+{
+
+    //渡すよう
+    include(get_theme_root() . '/gk-child/postauthor-archive.php');
+
+}
+add_shortcode('show_the_author_archive', 'show_the_author_archive');
+
 /*
 * メディアの抽出条件にログインユーザーの絞り込み条件を追加する
 */
