@@ -14,5 +14,4 @@ $user_id = get_the_author_meta('ID');
     <?php endwhile; ?>
 
 </div>
-<?php portfolio_paging_nav(); ?>
 <?php wp_reset_query(); ?>
