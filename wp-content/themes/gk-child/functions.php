@@ -28,15 +28,70 @@ function show_tag_archive($tagArgs)
 }
 add_shortcode('show_tag_archive', 'show_tag_archive');
 
-//ショートコード
+//ユーザ投稿一覧
 function show_the_author_archive()
 {
-
-    //渡すよう
     include(get_theme_root() . '/gk-child/postauthor-archive.php');
-
 }
 add_shortcode('show_the_author_archive', 'show_the_author_archive');
+
+//
+////urlのidから投稿一覧を出す
+function show_author_posts()
+{
+    include(get_theme_root() . '/gk-child/works_content.php');
+}
+add_shortcode('show_author_posts', 'show_author_posts');
+
+////ユーザfav一覧
+function show_favorite_posts()
+{
+    include(get_theme_root() . '/gk-child/favorite_posts_content.php');
+}
+add_shortcode('show_favorite_posts', 'show_favorite_posts');
+
+
+
+function portfolio_paging_nav_custom() {
+    global $wp_query, $paged;
+
+    //display number of current page
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+    // Don't print empty markup if there's only one page.
+    if ( $wp_query->max_num_pages < 2 )
+        return;
+    ?>
+    <nav class="navigation paging-navigation" role="navigation">
+        <div class="nav-links">
+
+            <?php if (get_next_posts_link($wp_query->max_num_pages)) : ?>
+                <div class="nav-previous"><?php next_posts_link( __( 'Older posts', 'portfolio' ),$wp_query->max_num_pages); ?></div>
+            <?php endif; ?>
+
+            <span class="pagination-item"><?php _e( 'Page', 'portfolio' )?> <?php echo $paged ?> <?php _e( 'of', 'portfolio' )?> <?php echo $wp_query->max_num_pages ?></span>
+
+            <?php if (get_previous_posts_link()) : ?>
+                <div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'portfolio' ) ); ?></div>
+            <?php endif; ?>
+
+        </div><!-- .nav-links -->
+    </nav><!-- .navigation -->
+    <?php
+}
+
+
+function getParamVal($param) {
+
+    $val = (isset($_GET[$param]) && $_GET[$param] != "") ? $_GET[$param] : "";
+    $val = htmlspecialchars($val, ENT_QUOTES);
+
+    return $val;
+
+}
+
+
+
 
 /*
 * メディアの抽出条件にログインユーザーの絞り込み条件を追加する

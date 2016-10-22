@@ -24,7 +24,10 @@ function works_title() {
 }
 
 function works_content() {
-    include_once "buddypress/custom_user/works_content.php";
+    global $bp;
+    $user_id = $bp->displayed_user->id;
+    header( "Location: http://localhost/fastIlustsite/authorposts/?id=" . $user_id  ) ;
+    //include_once "buddypress/custom_user/works_content.php";
 }
 
 function works () {
@@ -98,10 +101,14 @@ function favorite_posts_title() {
 }
 
 function favorite_posts_content() {
-    include_once "buddypress/custom_user/favorite_posts_content.php";
+    global $bp;
+    $user_id = $bp->displayed_user->id;
+    header( "Location: http://localhost/fastIlustsite/favoposts/?id=" . $user_id  ) ;
+//    include_once "buddypress/custom_user/favorite_posts_content.php";
 }
 
-define( 'BP_DEFAULT_COMPONENT', 'works' );
+//worksを最初に選択
+//define( 'BP_DEFAULT_COMPONENT', 'works' );
 
 
 /**

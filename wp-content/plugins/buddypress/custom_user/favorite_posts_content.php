@@ -3,7 +3,7 @@
 $favorite_post_ids = wpfp_get_users_favorites($GLOBALS['bp']->displayed_user->userdata->user_login);
 if(!empty($favorite_post_ids)):
     $args = array(
-        'posts_per_page' => $wp_query->max_num_pages,
+        'posts_per_page' => 4,//$wp_query->max_num_pages,
         'paged' => get_query_var('page'),
         'post__in' => $favorite_post_ids
     );
@@ -24,6 +24,6 @@ if(!empty($favorite_post_ids)):
 <?php else :?>
     <ul class="list"><li>まだ投稿はありません。</li></ul>
 <?php endif; ?>
-<?php portfolio_paging_nav(); ?>
+<?php portfolio_paging_nav_custom(); ?>
 <?php wp_reset_query(); ?>
 
