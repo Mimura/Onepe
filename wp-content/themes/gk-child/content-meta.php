@@ -47,9 +47,9 @@ if(
 			<?php
 		}
 		
-		if(current_user_can('edit_posts') || current_user_can('edit_pages')) {
-			edit_post_link(__('Edit', 'portfolio'), '<span class="edit-link">', '</span>');
-		}
+//		if(current_user_can('edit_posts') || current_user_can('edit_pages')) {
+//			edit_post_link(__('Edit', 'portfolio'), '<span class="edit-link">', '</span>');
+//		}
 	?>
 </aside><!-- .post-meta -->
 <?php endif; ?>
