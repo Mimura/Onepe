@@ -1018,7 +1018,7 @@ function auth_redirect() {
 
 	$login_url = wp_login_url($redirect, true);
 
-	wp_redirect("http://localhost/fastIlustsite/membership-login/"/*$login_url*/);
+	wp_redirect($login_url);
 	exit();
 }
 endif;
