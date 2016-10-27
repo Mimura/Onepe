@@ -19,7 +19,7 @@ function fep_add_new_post()
 					__('log in', 'frontend-publishing')
 				)
 			);
-		} else auth_redirect();
+		} else wp_redirect("http://localhost/fastIlustsite/membership-login/"); exit();//auth_redirect();
 	}
 
 	ob_start();
@@ -47,7 +47,7 @@ function fep_manage_posts()
 					__('log in', 'frontend-publishing')
 				)
 			);
-		} else auth_redirect();
+		} else wp_redirect("http://localhost/fastIlustsite/membership-login/"); exit();//auth_redirect();
 	}
 
 	ob_start();
