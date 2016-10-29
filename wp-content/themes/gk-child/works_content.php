@@ -1,7 +1,10 @@
 <!--BuddyPressのグローバル変数を呼び出し、表示中のユーザーのIDを取得-->
 
-<a href=<?php  echo bp_core_get_userlink(getParamVal("id"), false, true );?>>プロフィール   </a>
-<a href="http://localhost/fastIlustsite/favoposts/?id=<?php echo getParamVal("id"); ?>"> お気に入り一覧 </a>
+<?php $id = getParamVal("id"); ?>
+<a href=<?php  echo bp_core_get_userlink($id, false, true );?>>プロフィール</a>
+<?php
+$url = esc_url( get_home_url()) . "/favoposts/?id=" . $id ; ?>
+<a href=<?php echo $url ;?>>お気に入り一覧 </a>
 
 <?php
 global $bp;

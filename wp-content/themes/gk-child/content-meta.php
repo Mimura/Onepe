@@ -40,7 +40,8 @@ if(
 			}
 ?>
 <!--			<a href=--><?php // echo bp_core_get_userlink(get_the_author_meta('ID'), false, true );?><!--><?php //echo get_the_author();?><!-- </a>-->
-			<a href="http://localhost/fastIlustsite/authorposts/?id=<?php echo get_the_author_meta('ID'); ?>" ><?php echo get_the_author();?> </a>
+			<?php $url = esc_url( get_home_url()) . "/authorposts/?id=" . get_the_author_meta('ID') ; ?>
+			<a href=<?php echo $url ;?> ><?php echo get_the_author();?> </a>
 			<a><?php fav_authors_link(); ?></a>
 
 

@@ -1,7 +1,10 @@
-<a href=<?php  echo bp_core_get_userlink(getParamVal("id"), false, true );?>>プロフィール   </a>
-<a href="http://localhost/fastIlustsite/authorposts/?id=<?php echo getParamVal("id"); ?>"> 投稿一覧 </a>
+<?php $id = getParamVal("id"); ?>
+<a href=<?php  echo bp_core_get_userlink($id, false, true );?>>プロフィール</a>
 <?php
-$favorite_post_ids = wpfp_get_users_favorites(get_userdata(getParamVal("id"))->user_login);//wpfp_get_users_favorites($GLOBALS['bp']->displayed_user->userdata->user_login);
+$url = esc_url( get_home_url()) . "/authorposts/?id=" . $id ; ?>
+<a href=<?php echo $url ;?>> 投稿一覧 </a>
+<?php
+$favorite_post_ids = wpfp_get_users_favorites(get_userdata($id)->user_login);//wpfp_get_users_favorites($GLOBALS['bp']->displayed_user->userdata->user_login);
 if(!empty($favorite_post_ids)):
     $args = array(
         'posts_per_page' => 4,//$wp_query->max_num_pages,
