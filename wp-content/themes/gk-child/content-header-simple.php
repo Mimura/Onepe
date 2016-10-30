@@ -15,7 +15,7 @@ $video_code = portfolio_video_code();
 			<?php
 
 			$title = get_the_title();
-			if(!isset($title)) {
+			if(empty($title)) {
 				$title = "noTitle";
 			}
 			$authorName =get_the_author();
