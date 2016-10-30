@@ -1,42 +1,42 @@
 <?php
-
-/*BuddyPressユーザーページにメニューの追加だよ*/
-//ユーザーメニューを追加
-add_action( 'bp_setup_nav', 'works_nav');
-//ユーザーメニュー追加の独自関数をセット
-function works_nav() {
-    global $bp;
-    bp_core_new_nav_item( array(
-        'name' => '投稿一覧', //メニューの表示名
-        'slug' => 'works', //スラッグ名
-        'position' => 75,//追加メニューの表示順位
-//　http://hoge.com/members/ユーザーID/works/　と、なる　
-        'screen_function' => 'works',
-        'show_for_displayed_user' => true,//ユーザに表示するか
-        'default_subnav_slug' => 'works',//ユーザに表示するか
-        'item_css_id' => 'works'//メニューにIDを付与
-    ));
-}
-
-
-function works_title() {
-    echo '投稿一覧';//追加したユーザーページのタイトル
-}
-
-function works_content() {
-    global $bp;
-    $user_id = $bp->displayed_user->id;
-    header( "Location: http://localhost/fastIlustsite/authorposts/?id=" . $user_id  ) ;
-    //include_once "buddypress/custom_user/works_content.php";
-}
-
-function works () {
-    add_action( 'bp_template_title', 'works_title' );//カスタムユーザーページに見出し
-    add_action( 'bp_template_content', 'works_content' );//カスタムユーザーページに表示したい内容
-//テーマファイルの呼び出し(この記述で、メンバーページのファイル)
-    bp_core_load_template( apply_filters( 'bp_core_template_plugin', 'members/single/plugins' ) );
-}
-
+//
+///*BuddyPressユーザーページにメニューの追加だよ*/
+////ユーザーメニューを追加
+//add_action( 'bp_setup_nav', 'works_nav');
+////ユーザーメニュー追加の独自関数をセット
+//function works_nav() {
+//    global $bp;
+//    bp_core_new_nav_item( array(
+//        'name' => '投稿一覧', //メニューの表示名
+//        'slug' => 'works', //スラッグ名
+//        'position' => 75,//追加メニューの表示順位
+////　http://hoge.com/members/ユーザーID/works/　と、なる　
+//        'screen_function' => 'works',
+//        'show_for_displayed_user' => true,//ユーザに表示するか
+//        'default_subnav_slug' => 'works',//ユーザに表示するか
+//        'item_css_id' => 'works'//メニューにIDを付与
+//    ));
+//}
+//
+//
+//function works_title() {
+//    echo '投稿一覧';//追加したユーザーページのタイトル
+//}
+//
+//function works_content() {
+//    global $bp;
+//    $user_id = $bp->displayed_user->id;
+//    header( "Location: http://localhost/fastIlustsite/authorposts/?id=" . $user_id  ) ;
+//    //include_once "buddypress/custom_user/works_content.php";
+//}
+//
+//function works () {
+//    add_action( 'bp_template_title', 'works_title' );//カスタムユーザーページに見出し
+//    add_action( 'bp_template_content', 'works_content' );//カスタムユーザーページに表示したい内容
+////テーマファイルの呼び出し(この記述で、メンバーページのファイル)
+//    bp_core_load_template( apply_filters( 'bp_core_template_plugin', 'members/single/plugins' ) );
+//}
+//
 
 
 add_action( 'bp_setup_nav', 'favorite_users_nav');
@@ -70,41 +70,76 @@ function favorite_users_title() {
 function favorite_users_content() {
     include_once "buddypress/custom_user/favorite_users_content.php";
 }
+//
+//
+//add_action( 'bp_setup_nav', 'favorite_posts_nav');
+////ユーザーメニュー追加の独自関数をセット
+//function favorite_posts_nav() {
+//    global $bp;
+//    bp_core_new_nav_item( array(
+//        'name' => 'お気に入り投稿', //メニューの表示名
+//        'slug' => 'favorite_posts', //スラッグ名
+//        'position' => 75,//追加メニューの表示順位
+////　http://hoge.com/members/ユーザーID/works/　と、なる　
+//        'screen_function' => 'favorite_posts',
+//        'show_for_displayed_user' => true,//ユーザに表示するか
+//        'default_subnav_slug' => 'favorite_posts',//ユーザに表示するか
+//        'item_css_id' => 'favorite_posts'//メニューにIDを付与
+//    ));
+//}
+//
+//
+//function favorite_posts () {
+//    add_action( 'bp_template_title', 'favorite_posts_title' );//カスタムユーザーページに見出し
+//    add_action( 'bp_template_content', 'favorite_posts_content' );//カスタムユーザーページに表示したい内容
+////テーマファイルの呼び出し(この記述で、メンバーページのファイル)
+//    bp_core_load_template( apply_filters( 'bp_core_template_plugin', 'members/single/plugins' ) );
+//}
+//
+//function favorite_posts_title() {
+//    echo 'お気に入り投稿';//追加したユーザーページのタイトル
+//}
+//
+//function favorite_posts_content() {
+//    global $bp;
+//    $user_id = $bp->displayed_user->id;
+//    header( "Location: http://localhost/fastIlustsite/favoposts/?id=" . $user_id  ) ;
+//    exit;
+////    include_once "buddypress/custom_user/favorite_posts_content.php";
+//}
 
 
-add_action( 'bp_setup_nav', 'favorite_posts_nav');
+add_action( 'bp_setup_nav', 'list_nav');
 //ユーザーメニュー追加の独自関数をセット
-function favorite_posts_nav() {
+function list_nav() {
     global $bp;
     bp_core_new_nav_item( array(
-        'name' => 'お気に入り投稿', //メニューの表示名
-        'slug' => 'favorite_posts', //スラッグ名
+        'name' => '一覧', //メニューの表示名
+        'slug' => 'profilelist', //スラッグ名
         'position' => 75,//追加メニューの表示順位
 //　http://hoge.com/members/ユーザーID/works/　と、なる　
-        'screen_function' => 'favorite_posts',
+        'screen_function' => 'profilelist',
         'show_for_displayed_user' => true,//ユーザに表示するか
-        'default_subnav_slug' => 'favorite_posts',//ユーザに表示するか
-        'item_css_id' => 'favorite_posts'//メニューにIDを付与
+        'default_subnav_slug' => 'profilelist',//ユーザに表示するか
+        'item_css_id' => 'profilelist'//メニューにIDを付与
     ));
 }
 
 
-function favorite_posts () {
-    add_action( 'bp_template_title', 'favorite_posts_title' );//カスタムユーザーページに見出し
-    add_action( 'bp_template_content', 'favorite_posts_content' );//カスタムユーザーページに表示したい内容
+function profilelist () {
+    add_action( 'bp_template_title', 'profilelist_title' );//カスタムユーザーページに見出し
+    add_action( 'bp_template_content', 'profilelist_content' );//カスタムユーザーページに表示したい内容
 //テーマファイルの呼び出し(この記述で、メンバーページのファイル)
     bp_core_load_template( apply_filters( 'bp_core_template_plugin', 'members/single/plugins' ) );
 }
 
-function favorite_posts_title() {
-    echo 'お気に入り投稿';//追加したユーザーページのタイトル
+function profilelist_title() {
+    echo '一覧';//追加したユーザーページのタイトル
 }
 
-function favorite_posts_content() {
+function profilelist_content() {
     global $bp;
-    $user_id = $bp->displayed_user->id;
-    header( "Location: http://localhost/fastIlustsite/favoposts/?id=" . $user_id  ) ;
-//    include_once "buddypress/custom_user/favorite_posts_content.php";
+    include_once "buddypress/custom_user/list_content.php";
 }
 
 //worksを最初に選択
