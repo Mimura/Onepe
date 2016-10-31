@@ -1,5 +1,5 @@
 <h2 class="page-head">
-    <span class="colour"><?php printf( __( "%s's Dashboard", 'wpuf' ), $userdata->user_login ); ?></span>
+    <span class="colour"><?php printf( __( "%sのダッシュボード", 'wpuf' ), $userdata->display_name); ?></span>
 </h2>
 
 <?php if ( wpuf_get_option( 'show_post_count', 'wpuf_dashboard', 'on' ) == 'on' ) { ?>

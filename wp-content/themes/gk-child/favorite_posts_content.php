@@ -3,6 +3,10 @@
 <?php
 $url = esc_url( get_home_url()) . "/authorposts/?id=" . $id ; ?>
 <a href=<?php echo $url ;?>> 投稿一覧 </a>
+
+<?php $userInfo = get_userdata($id);?>
+<h2><?php echo $userInfo->display_name; ?>のお気に入り投稿</h2>
+
 <?php
 $favorite_post_ids = wpfp_get_users_favorites(get_userdata($id)->user_login);//wpfp_get_users_favorites($GLOBALS['bp']->displayed_user->userdata->user_login);
 if(!empty($favorite_post_ids)):
