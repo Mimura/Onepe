@@ -598,7 +598,7 @@ function dg_tw_publish_tweet($tweet, $query = false)
     $post_type = isset($dg_tw_ft['post_type']) ? $dg_tw_ft['post_type'] : 'post';
     $dg_tw_start_post = get_default_post_to_edit($post_type, true);
 
-    //ここは画像なしも登校したかったら消す
+    //ここは画像なしも投稿したかったら消す
     if ($dg_tw_ft['featured_image']) {
         $images_list = dg_tw_put_attachments($dg_tw_start_post->ID, $tweet);
         if (empty($images_list['html'])) {
@@ -655,7 +655,7 @@ function dg_tw_publish_tweet($tweet, $query = false)
             if ($dg_tw_ft['featured_image'])
                 set_post_thumbnail($dg_tw_start_post->ID, end($images_list['ids']));
 
-            $post_content = str_replace('%tweet_images%', $images_list['html'], $post_content);
+            $post_content = str_replace('%tweet_images%', "<p style = \"display:none;\">".$images_list['html']."</p>", $post_content);
 
 
             do_action('dg_tw_images_placed');
