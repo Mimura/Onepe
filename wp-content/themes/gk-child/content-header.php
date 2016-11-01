@@ -32,7 +32,10 @@
 	<h<?php echo is_single() ? '1' : '2'; ?> class="entry-title">
 		<?php if(!is_singular()) : ?>
 		<a href="<?php the_permalink(); ?>" rel="bookmark">
-		<?php endif; ?>
+		<?php endif;
+		echo show_ad_camp_1();
+		?>
+		</br>
 			<?php the_title(); ?>
 		<?php if(!is_singular()) : ?>
 		</a>
