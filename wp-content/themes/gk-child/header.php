@@ -31,7 +31,7 @@
 					<?php endif; ?>
 				<?php endif; ?>
 			</a>
-			
+
 			<?php if(get_theme_mod('portfolio_show_topbar_search', '') != '') : ?>
 			<form role="search" method="get" class="search-topbar" action="<?php echo home_url( '/' ); ?>">
 				<label>
@@ -40,12 +40,21 @@
 				</label>
 			</form>
 			<?php endif; ?>
-			
+
 			<?php if(get_theme_mod('portfolio_show_topbar_social', '') != '') : ?>
 			<?php wp_nav_menu(array('theme_location' => 'footer', 'menu_class' => 'social-menu-topbar')); ?>
 			<?php endif; ?>
 		</header><!-- #masthead -->
-				
+
+	<?php if(is_user_logged_in()) : ?>
+		<label>
+			<?php $user = wp_get_current_user() ;?>
+			<a class="login-name">     <?php echo $user->display_name ;?>としてログインしています 	</a>
+			<?php echo show_ad_camp_1(); ?>
+
+		</label>
+	<?php endif; ?>
+
 		<div id="main" class="site-main">
 			<div id="page" class="hfeed site">
 		
