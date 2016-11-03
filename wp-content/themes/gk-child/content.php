@@ -31,6 +31,8 @@
 						echo $tag_list;
 					}
 				}
+			echo show_ad_camp_3();
+
 			?>
 		</div><!-- .entry-content -->
 		<?php endif; ?>

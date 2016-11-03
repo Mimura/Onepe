@@ -50,7 +50,7 @@
 		<label>
 			<?php $user = wp_get_current_user() ;?>
 			<a class="login-name">     <?php echo $user->display_name ;?>としてログインしています 	</a>
-			<?php echo show_ad_camp_1(); ?>
+			<?php echo show_ad_camp_2(); ?>
 
 		</label>
 	<?php endif; ?>
