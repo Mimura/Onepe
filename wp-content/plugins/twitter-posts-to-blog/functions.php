@@ -290,9 +290,9 @@ function dg_tw_iswhite($tweet)
     //絶対if入る
     //twitterIdが全ユーザのuser_nicenameに含まれていなければfalseを返す（投稿しない）
 
-    $usernames = $wpdb->get_results("SELECT ID FROM $wpdb->users WHERE ID!=1 ORDER BY ID");
+    //$usernames = $wpdb->get_results("SELECT ID FROM $wpdb->users WHERE ID!=1 ORDER BY ID");
 
-    if (!empty($usernames)) {
+    //if (!empty($usernames)) {
 
         $postTwitterId = dg_tw_tweet_user($tweet);
         $q = "SELECT COUNT(*) FROM $wpdb->users WHERE (user_nicename ='". $postTwitterId ."')";
@@ -301,7 +301,7 @@ function dg_tw_iswhite($tweet)
         if($userCount <= 0){
             return false;
         }
-    }
+    //}
 
     return true;
 }
@@ -661,17 +661,15 @@ function dg_tw_publish_tweet($tweet, $query = false)
             do_action('dg_tw_images_placed');
         }
 
+        $q = "SELECT * FROM $wpdb->users WHERE (user_nicename = '". $tweet->user->screen_name ."')";
 
-
-        $authors =$wpdb->get_results("SELECT *
-                    FROM $wpdb->usermeta
-                    WHERE (meta_key = 'last_name' AND meta_value = '". $tweet->user->screen_name ."')");
+        $authors =$wpdb->get_results($q);
 
         $author = $authors[0];
 
         $post = array(
             'ID' => $dg_tw_start_post->ID,
-            'post_author' => $author -> user_id,//$dg_tw_ft['author'],
+            'post_author' => $author -> ID,//$dg_tw_ft['author'],
             'post_content' => $post_content,
             'post_name' => dg_tw_slug($post_title),
             'post_status' => strval($dg_tw_publish),
