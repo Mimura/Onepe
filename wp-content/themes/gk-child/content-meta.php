@@ -44,6 +44,10 @@ if(
 			<a href=<?php echo $url ;?> ><?php echo get_the_author();?> </a>
 			<a><?php fav_authors_link(); ?></a>
 
+			<?php if(function_exists('the_views')) {
+				the_views();
+			} ?>
+
 
 			<?php
 		}
