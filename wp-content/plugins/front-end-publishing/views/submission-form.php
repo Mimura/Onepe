@@ -1,4 +1,8 @@
 <?php
+wp_enqueue_style('fep-style');
+wp_enqueue_script('fep-script');
+wp_enqueue_media();
+
 $current_user = wp_get_current_user();
 $post = false;
 $post_id = -1;

@@ -55,6 +55,8 @@ function fep_render_settings_page()
 					<h3><?php _e('Frontend Publishing Pro', 'frontend-publishing'); ?></h3>
 					<?php _e('Supports:', 'frontend-publishing'); ?>
 					<ul>
+						<li>- <?php _e('PayPal payments', 'frontend-publishing'); ?></li>
+						<li>- <?php _e('CopyScape integration', 'frontend-publishing'); ?></li>
 						<li>- <?php _e('Custom fields', 'frontend-publishing'); ?></li>
 						<li>- <?php _e('Custom post types', 'frontend-publishing'); ?></li>
 						<li>- <?php _e('Custom taxonomies', 'frontend-publishing'); ?></li>
@@ -62,10 +64,10 @@ function fep_render_settings_page()
 						<li>- <?php _e('Drag and drop form builder', 'frontend-publishing'); ?></li>
 						<li>- <?php _e('Media restrictions', 'frontend-publishing'); ?></li>
 						<li>- <?php _e('Auto-drafts', 'frontend-publishing'); ?></li>
-						<li>- <?php _e('Anonymous Posting', 'frontend-publishing'); ?></li>
+						<li>- <?php _e('Anonymous posting', 'frontend-publishing'); ?></li>
 					</ul>
 					<div style="text-align:center;"><a class="button button-primary"
-													   href="http://wpfrontendpublishing.com/"><?php _e('Try It Now!', 'frontend-publishing'); ?></a>
+													   href="http://codecanyon.net/item/frontend-publishing-pro/8517990/?ref=khaxan"><?php _e('Try It Now!', 'frontend-publishing'); ?></a>
 					</div>
 				</div>
 			</div>

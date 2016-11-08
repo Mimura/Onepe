@@ -3,7 +3,7 @@
 Plugin Name: Frontend Publishing
 Plugin URI: http://wpgurus.net/
 Description: Accept guest posts without giving your authors access to the admin area.
-Version: 2.3.2
+Version: 2.3.4
 Author: Hassan Akhtar
 Author URI: http://wpgurus.net/
 Text Domain: frontend-publishing
@@ -122,36 +122,19 @@ register_uninstall_hook(__FILE__, 'fep_rollback');
  * @param array $posts WordPress posts to check for the shortcode
  * @return array $posts Checked WordPress posts
  */
-function fep_enqueue_files($posts)
+function fep_register_resources()
 {
-	if (!is_main_query() || empty($posts))
-		return $posts;
-
-	$found = false;
-	foreach ($posts as $post) {
-		if (has_shortcode($post->post_content, 'fep_article_list') || has_shortcode($post->post_content, 'fep_submission_form')) {
-			$found = true;
-			break;
-		}
-	}
-
-	if ($found) {
-		wp_enqueue_style('fep-style', plugins_url('static/css/style.css', __FILE__), array(), '1.0', 'all');
-		wp_enqueue_script("fep-script", plugins_url('static/js/scripts.js', __FILE__), array('jquery'));
-		wp_localize_script('fep-script', 'fepajaxhandler', array('ajaxurl' => admin_url('admin-ajax.php')));
-		$fep_rules = get_option('fep_post_restrictions');
-		$fep_roles = get_option('fep_role_settings');
-		$fep_rules['check_required'] = (isset($fep_roles['no_check']) && $fep_roles['no_check'] && current_user_can($fep_roles['no_check'])) ? 0 : 1;
-		wp_localize_script('fep-script', 'fep_rules', $fep_rules);
-		wp_localize_script('fep-script', 'fep_messages', fep_messages());
-		$enable_media = (isset($fep_roles['enable_media']) && $fep_roles['enable_media']) ? current_user_can($fep_roles['enable_media']) : 1;
-		if ($enable_media)
-			wp_enqueue_media();
-	}
-	return $posts;
+	wp_register_style('fep-style', plugins_url('static/css/style.css', __FILE__), array(), '1.0', 'all');
+	wp_register_script("fep-script", plugins_url('static/js/scripts.js', __FILE__), array('jquery'));
+	wp_localize_script('fep-script', 'fepajaxhandler', array('ajaxurl' => admin_url('admin-ajax.php')));
+	$fep_rules = get_option('fep_post_restrictions');
+	$fep_roles = get_option('fep_role_settings');
+	$fep_rules['check_required'] = (isset($fep_roles['no_check']) && $fep_roles['no_check'] && current_user_can($fep_roles['no_check'])) ? 0 : 1;
+	wp_localize_script('fep-script', 'fep_rules', $fep_rules);
+	wp_localize_script('fep-script', 'fep_messages', fep_messages());
 }
 
-add_action('the_posts', 'fep_enqueue_files');
+add_action('init', 'fep_register_resources');
 
 /**
  * Append post meta (author bio) to post content

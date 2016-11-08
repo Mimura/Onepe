@@ -4,7 +4,7 @@ Tags: guest posting, article directory, new post, manage posts, membership, cont
 Donate link: http://wpgurus.net/
 Requires at least: 3.6
 Tested up to: 4.6
-Stable tag: 2.3.2
+Stable tag: 2.3.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,3 +66,6 @@ Add another page with the following shortcode to create a list of user's posts:
 = 2.3.2 =
 * Previously translatable strings were being saved in the DB which was causing problems with localization. FIXED.
 * Added additional check to enqueue resources in the main query only.
+= 2.3.4 =
+* Changed the logic for enqueuing resources. Posts are no longer traversed to look for the shortcode.
+* Made improvements in JS.
