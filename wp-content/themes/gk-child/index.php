@@ -15,17 +15,7 @@ get_header(); ?>
 				<?php get_template_part( 'content', 'none' ); ?>
 			<?php endif; ?>
 		</div><!-- #content -->
-
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- エンジニア自動サイズ -->
-		<ins class="adsbygoogle"
-			 style="display:block"
-			 data-ad-client="ca-pub-7171481905282599"
-			 data-ad-slot="1759256866"
-			 data-ad-format="auto"></ins>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
+		<?php echo show_ad_camp_5(); ?>
 		<?php portfolio_paging_nav(); ?>
 	</div><!-- #primary -->
 
