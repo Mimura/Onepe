@@ -4,12 +4,12 @@ Plugin Name: NextScripts: Social Networks Auto-Poster
 Plugin URI: http://www.nextscripts.com/social-networks-auto-poster-for-wordpress
 Description: This plugin automatically publishes posts from your blog to multiple accounts on Facebook, Twitter, and Google+ profiles and/or pages.
 Author: NextScripts
-Version: 3.7.3
+Version: 3.7.5
 Author URI: http://www.nextscripts.com
 Text Domain: nxs_snap
 Copyright 2012-2016  NextScripts, Inc
 */
-define( 'NextScripts_SNAP_Version' , '3.7.3' ); 
+define( 'NextScripts_SNAP_Version' , '3.7.5' ); 
 
 $nxs_mLimit = ini_get('memory_limit'); if (strpos($nxs_mLimit, 'G')) {$nxs_mLimit = (int)$nxs_mLimit * 1024;} else {$nxs_mLimit = (int)$nxs_mLimit;}
   if ($nxs_mLimit>0 && $nxs_mLimit<64) { add_filter('plugin_action_links','ns_add_nomem_link', 10, 2 );
@@ -75,10 +75,11 @@ if (!function_exists("nxs_snapLogPublishTo")) { function nxs_snapLogPublishTo( $
     nxs_snapPublishTo($post);
   }
 }}
-if (!function_exists("nxs_snapPublishTo")) { function nxs_snapPublishTo($postArr, $type='', $aj=false) {  global $plgn_NS_SNAutoPoster, $nxs_snapAvNts, $blog_id, $nxs_tpWMPU;  //  echo " | nxs_doSMAS2 | "; prr($postArr);
-  if (!isset($plgn_NS_SNAutoPoster)) return; $options = $plgn_NS_SNAutoPoster->nxs_options; 
+if (!function_exists("nxs_snapPublishTo")) { function nxs_snapPublishTo($postArr, $type='', $aj=false) {  global $plgn_NS_SNAutoPoster, $nxs_snapAvNts, $blog_id, $nxs_tpWMPU;  if(is_object($postArr)) $postID = $postArr->ID; else { $postID = $postArr; $postArr = get_post($postID); }
+  if (!isset($plgn_NS_SNAutoPoster)) { if (class_exists("NS_SNAutoPoster")) { nxs_checkAddLogTable(); $plgn_NS_SNAutoPoster = new NS_SNAutoPoster(); new nxs_Filters;  } else nxs_LogIt('I', 'Cancelled', '', '', 'Autopost Aborted', 'SNAP Class is not found. Post ID:('.$postID.')');}
+  if (!isset($plgn_NS_SNAutoPoster)) { nxs_LogIt('I', 'Cancelled', '', '', 'Autopost Aborted', 'SNAP is not loaded. Post ID:('.$postID.')'); return; } $options = $plgn_NS_SNAutoPoster->nxs_options; 
   if (!empty($_POST['nxs_snapPostOptions'])) { $NXS_POSTX = $_POST['nxs_snapPostOptions'];  $NXS_POST = array(); $NXS_POST = NXS_parseQueryStr($NXS_POSTX); } else $NXS_POST = $_POST;
-  if(is_object($postArr)) $postID = $postArr->ID; else { $postID = $postArr; $postArr = get_post($postID);  } $isPost = isset($NXS_POST["snapEdIT"]);  $post = get_post($postID);   
+  $isPost = isset($NXS_POST["snapEdIT"]);  $post = get_post($postID);   
   if ($post->post_status != 'publish') { sleep(5);  $post = get_post($postID); $postArr = $post;
     if ($post->post_status != 'publish') {  nxs_addToLogN('I', 'Cancelled', '', 'Autopost Cancelled - Post is not "Published" Right now - Post ID:('.$postID.') - Current Post status -'.$post->post_status ); return; }
   }  
@@ -182,7 +183,7 @@ function nxs_end_flush_ob(){ if (!is_admin()) @ob_end_flush();}
 function nxs_ogtgCallback($content){ global $post, $plgn_NS_SNAutoPoster;  
   if (stripos($content, 'og:title')!==false) $ogOut = "\r\n"; else {
     if (!isset($plgn_NS_SNAutoPoster)) $options = get_option('NS_SNAutoPoster'); else $options = $plgn_NS_SNAutoPoster->nxs_options;    $ogimgs = array();  
-    if (!empty($post) && !is_object($post) && int($post)>0) $post = get_post($post); if (empty($options['advFindOGImg'])) $options['advFindOGImg'] = 0;       
+    if (!empty($post) && !is_object($post) && (int)$post>0) $post = get_post($post); if (empty($options['advFindOGImg'])) $options['advFindOGImg'] = 0;       
     $title = preg_match( '/<title>(.*)<\/title>/', $content, $title_matches );  
     if ($title !== false && count( $title_matches) == 2 ) $ogT ='<meta property="og:title" content="' . $title_matches[1] . '" />'."\r\n"; else {
       if (is_home() || is_front_page() )  $ogT = get_bloginfo( 'name' ); else $ogT = get_the_title();

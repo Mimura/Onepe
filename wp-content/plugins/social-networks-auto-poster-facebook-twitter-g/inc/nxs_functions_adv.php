@@ -494,14 +494,15 @@ if (!function_exists('nxs_altCurlUploadImg')){ function nxs_altCurlUploadImg( $c
     curl_setopt($ch, CURLOPT_POST, TRUE); curl_setopt($ch, CURLOPT_POSTFIELDS, $pstArray); return array('ch'=>$ch, 'r'=>$r);
 }}
 if (!function_exists('nxs_curlUploadImg')){ function nxs_curlUploadImg($imgURL, $uplURL, $pstArray, $pstField, $ck='') { $remImgURL = urldecode($imgURL); $urlParced = pathinfo($remImgURL); $remImgURLFilename = $urlParced['basename']; 
-  $imgType = substr(  $remImgURL, strrpos( $remImgURL , '.' )+1 ); $hdrsArr = array('User-Agent'=>'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.57 Safari/537.36', 'Referer'=>$remImgURL); 
+  $imgType = substr(  $remImgURL, strrpos( $remImgURL , '.' )+1 ); $ia = array("jpg", "png", "gif", "jpeg"); if (!in_array($imgType, $ia)) $imgType = 'jpg';
+  $hdrsArr = array('User-Agent'=>'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.57 Safari/537.36', 'Referer'=>$remImgURL); 
   $advSet = nxs_mkRemOptsArr($hdrsArr);  $imgData = nxs_remote_get($remImgURL, $advSet);// prr($remImgURL);  // prr($imgData);
   if(is_nxs_error($imgData) || empty($imgData['body']) || (!empty($imgData['headers']['content-length']) && (int)$imgData['headers']['content-length']<200) || 
     $imgData['headers']['content-type'] == 'text/html' ||  $imgData['response']['code'] == '403' ) return array('err'=>print_r($imgData, true)); else $imgData = $imgData['body'];  
   $tmpX=array_search('uri', @array_flip(stream_get_meta_data($GLOBALS[mt_rand()]=tmpfile()))); if (!is_writable($tmpX)) return array('err'=>"Your temporary folder or file (file - ".$tmpX.") is not writable. Can't upload image to IG");
   rename($tmpX, $tmpX.='.'.$imgType);  register_shutdown_function(create_function('', "@unlink('{$tmpX}');")); file_put_contents($tmpX, $imgData);  
-  $hdrsArr['Content-type'] = 'multipart/form-data'; $hdrsArr['nxsUplFile'] = $tmpX; $hdrsArr['nxsPstArr'] = serialize($pstArray); $hdrsArr['nxsPstField'] = $pstField;  $advSet = nxs_mkRemOptsArr($hdrsArr, $ck, $pstArray); $advSet['postAsArray'] = 1;//  prr($advSet);
-  $rep = nxs_remote_post($uplURL, $advSet); if(is_nxs_error($rep)) return array('err'=>print_r($rep, true)); else return $rep;  
+  $hdrsArr['Content-type'] = 'multipart/form-data'; $hdrsArr['nxsUplFile'] = $tmpX; $hdrsArr['nxsPstArr'] = serialize($pstArray); $hdrsArr['nxsPstField'] = $pstField;  $advSet = nxs_mkRemOptsArr($hdrsArr, $ck, $pstArray); $advSet['postAsArray'] = 1; 
+  $rep = nxs_remote_post($uplURL, $advSet); @unlink($tmpX); if(is_nxs_error($rep)) return array('err'=>print_r($rep, true)); else return $rep;  
 }}
 
 if (!function_exists('nxs_altCurlProxy')){ function nxs_altCurlProxy( $ch, $r='' ){ if (empty($r['proxy'])) return; curl_setopt($ch, CURLOPT_PROXY, $r['proxy']['proxy']);  

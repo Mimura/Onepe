@@ -288,8 +288,7 @@ if ( is_array($category_ids) && is_array($pk) && count($category_ids) == count($
            
            </div>
            
-           <div id="nxs_gPopup"><span class="nxspButton bClose"><span>X</span></span><div id="nxs_gPopupContent"></div></div>
-           
+           <div id="nxs_gPopup"><span class="nxspButton bClose"><span>X</span></span><div id="nxs_gPopupContent"></div></div>           
            <div class="popShAtt" id="popOnlyCat"><?php _e('Filters are "ON". Only selected categories/tags will be autoposted to this account. Click "Show Settings->Advanced" to change', 'social-networks-auto-poster-facebook-twitter-g'); ?></div>
            <div class="popShAtt" style="width: 400px;" id="popShAttFLT" data-text="<?php _e('Filters are active. Click Show Settings->Advanced to change.<br/>', 'social-networks-auto-poster-facebook-twitter-g'); ?>"></div>
            <div class="popShAtt" id="popReActive"><?php _e('Reposter is activated for this account', 'social-networks-auto-poster-facebook-twitter-g'); ?></div>

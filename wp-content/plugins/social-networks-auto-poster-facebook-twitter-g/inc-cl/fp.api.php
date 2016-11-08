@@ -56,7 +56,8 @@ if (!class_exists("nxs_class_SNAP_FP")) { class nxs_class_SNAP_FP {
       return $out;
     }
     
-    function doPostToNT($options, $message){ global $nxs_urlLen; $badOut = array('pgID'=>'', 'isPosted'=>0, 'pDate'=>date('Y-m-d H:i:s'), 'Error'=>'');
+    function doPostToNT($options, $message){ global $nxs_urlLen; $badOut = array('pgID'=>'', 'isPosted'=>0, 'pDate'=>date('Y-m-d H:i:s'), 'Error'=>''); 
+      if (!class_exists("nxsAPI_FP")){ $badOut['Error'] .= "Flipboard API Library not found"; return $badOut; } 
       //## Check settings
       if (!is_array($options)) { $badOut['Error'] = 'No Options'; return $badOut; }      
       if (!isset($options['uPass']) || trim($options['uPass'])=='') { $badOut['Error'] = 'Not Authorized'; return $badOut; }      

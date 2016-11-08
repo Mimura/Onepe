@@ -68,8 +68,8 @@ if (!class_exists('nxsAPI_DA')){class nxsAPI_DA{ var $ck = array(); var $mh = ''
       $rep = nxs_remote_get( $mh.'/journal/?edit', $advSets); if (is_nxs_error($rep)) {  $badOut = print_r($rep, true)." - ERROR Post 1"; return $badOut; } 
       $contents = CutFromTo($rep['body'], '<h3 class="journal-editor-create">', '</form>'); // prr($contents);      
       $md = array();  while (stripos($contents, '"hidden"')!==false){$contents = substr($contents, stripos($contents, '"hidden"')+8); $name = trim(CutFromTo($contents,'name="', '"'));
-        if (!in_array($name, $md)) { $md[] = $name; $val = trim(CutFromTo($contents,'value="', '"')); $flds[$name]= urldecode (nxs_decodeEntities($val)); }
-      } $flds['subject'] = nsTrnc(nxs_decodeEntities($post['title']), 50); $flds['body'] = trim($post['text']);  $flds['song'] = '';       
+        if (!in_array($name, $md)) { $md[] = $name; $val = trim(CutFromTo($contents,'value="', '"')); $flds[$name]= urldecode (nxs_decodeEntitiesFull($val)); }
+      } $flds['subject'] = nsTrnc(nxs_decodeEntitiesFull($post['title']), 50); $flds['body'] = trim($post['text']);  $flds['song'] = '';       
       $flds['game'] = ''; $flds['book'] = ''; $flds['food'] = ''; $flds['movie'] = ''; $flds['drink'] = ''; $flds['flip'] = '0'; $flds['featured'] = '1'; 
       $flds['portal'] = '1'; $flds['skinlabel'] = 'No+skin'; $flds['jheader'] = ''; $flds['jcss'] = ''; $flds['jfooter'] = '';       
       $ck2 =  $rep['cookies']; for($i=0;$i<count($ck);$i++) if ($ck[$i]->name=='userinfo') $ck[$i]->value = urlencode($ck2[0]->value);       

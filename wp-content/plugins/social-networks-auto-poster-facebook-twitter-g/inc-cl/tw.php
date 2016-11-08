@@ -188,8 +188,8 @@ if (!function_exists("nxs_getBackTWCommentsList")) { function nxs_getBackTWComme
 if (!function_exists("nxs_getBackTWComments")) { function nxs_getBackTWComments($postID, $options, $po, $twList) { $impCmnts = get_post_meta($postID, 'snapImportedComments', true);  
     if(!is_array($impCmnts)) $impCmnts = array(); $twsToImp = array(); $lastID = '';
     //## Do Replies
-    foreach ($twList as $tw) if ($tw['in_reply_to_status_id_str'] == $po['pgID']) $twsToImp[] = $tw;
-    if (is_array($twsToImp) && count($twsToImp)>0)
+    if (!empty($twList) && is_array($twList)) foreach ($twList as $tw) if ($tw['in_reply_to_status_id_str'] == $po['pgID']) $twsToImp[] = $tw;
+    if (!empty($twList) && is_array($twsToImp) && count($twsToImp)>0)
       foreach ($twsToImp as $comment){ $cid = $comment['id_str']; if (trim($cid)=='' || in_array('twxcw'.$cid, $impCmnts)) continue; else $impCmnts[] = 'twxcw'.$cid;  // prr($impCmnts);
         $commentdata = array( 'comment_post_ID' => $postID, 'comment_author' => $comment['user']['name'], 'comment_agent' => "SNAP||".str_ireplace('_normal.','_bigger.',$comment['user']['profile_image_url_https']), 
           'comment_author_email' => $comment['user']['screen_name'].'@twitter.com', 'comment_author_url' => 'http://twitter.com/'.$comment['user']['screen_name'], 

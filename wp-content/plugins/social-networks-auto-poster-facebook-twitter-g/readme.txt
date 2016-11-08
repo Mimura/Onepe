@@ -2,23 +2,23 @@
 
 Contributors: NextScripts
 Donate link: http://www.nextscripts.com/social-networks-auto-poster-for-wordpress
-Tags: automation, autopost, auto-post, auto post, socialnetworks, socialnetwork, social networks, social network, facebook, Flipboard, google, google+, Flickr, twitter, google plus, pinterest, 500px, tumblr, blogger, blogspot, linkedin, delicious, delicious.com, reddit, reddit.com, plugin, links, Post, posts, api, automatic, seo, scoop.it, integration, bookmark, bookmarks, admin, images, image, social, sharing, share, repost, re-post, wordpress.com, StumbleUpon, Diigo, vBulletin, Plurk, forums, vKontakte, open graph, LiveJournal, SETT, YouTube, Telegram, Instagram, xing, medium, yo, Weibo, mailchimp
+Tags: automation, autopost, auto-post, auto post, socialnetworks, socialnetwork, social networks, social network, facebook, Flipboard, google, google+, Flickr, twitter, google plus, pinterest, 500px, tumblr, blogger, blogspot, linkedin, delicious, delicious.com, reddit, reddit.com, plugin, links, Post, posts, api, automatic, seo, scoop.it, integration, bookmark, bookmarks, admin, images, image, social, sharing, share, repost, re-post, wordpress.com, StumbleUpon, Diigo, vBulletin, Plurk, forums, vKontakte, open graph, LiveJournal, SETT, YouTube, Telegram, Instagram, xing, medium, yo, Weibo, mailchimp, Odnoklassniki, ok.ru
 Requires at least: 3.4
 Tested up to: 4.6.1
-Stable tag: 3.7.3
+Stable tag: 3.7.5
 License: GPLv2 or later
 
 Automatically publishes blogposts to profiles/pages/groups on Facebook, Twitter, Instagram, Google+, Pinterest, LinkedIn, Blogger, Tumblr ... 22 more
 
 == Description ==
 
-**This plugin automatically publishes posts from your blog to your Social Network accounts** such as Facebook, Twitter, Google+(Google Plus), Blogger, Tumblr, Flickr, LiveJournal, Flipboard, Instagram, Telegram, DreamWidth, Delicious, Diigo, Instapaper, Stumbleupon, LinkedIn, Pinterest, Plurk, VKontakte(VK.com), YouTube, App.net, Scoop.It, Wordpress, XING etc. The whole process is completely automated. Just write a new post and either entire post or it's nicely formatted announcement with backlink will be published to all your configured social networks. You can reach the most audience and tell all your friends, readers and followers about your new post. Plugin works with profiles, business pages, community pages, groups, etc. Messages are 100% customizable and adopted for each network requirements.
+**This plugin automatically publishes posts from your blog to your Social Network accounts** such as Facebook, Twitter, Google+(Google Plus), Blogger, Tumblr, Flickr, LiveJournal, Flipboard, Instagram, Telegram, DreamWidth, Delicious, Diigo, Instapaper, Stumbleupon, LinkedIn, ok.ru, Pinterest, Plurk, VKontakte(VK.com), YouTube, App.net, Scoop.It, Wordpress, XING etc. The whole process is completely automated. Just write a new post and either entire post or it's nicely formatted announcement with backlink will be published to all your configured social networks. You can reach the most audience and tell all your friends, readers and followers about your new post. Plugin works with profiles, business pages, community pages, groups, etc. Messages are 100% customizable and adopted for each network requirements.
 
 **ALL NEW SNAP for Wordpress Version 4 is coming soon...**
 
 More V4 info: http://www.nextscripts.com/tag/v4/
 
-* **Latest version 3.7** - New networks - MailChimp, Weibo. Improved interface.
+* **Latest version 3.7** - New networks - MailChimp, ok.ru (Odnoklassniki), Weibo. Improved interface.
 * *Version 3.6* - New networks - Yo, Medium, 500px. Filters (http://www.nextscripts.com/snap-features/filters/).
 * *Version 3.5* - New networks - Telegram and Instagram. New publishing platform.
 * *Version 3.4* - New networks - XING, Kippt, compatibility with WP 3.9, 4.0, 4.1 and PHP 5.5. 
@@ -42,6 +42,7 @@ More V4 info: http://www.nextscripts.com/tag/v4/
 * **LiveJournal** - Auto-submit your blogpost to LiveJournal blog or community. "LiveJournal Engine" based website DreamWidth.org is also supported. 
 * [New]**MailChimp** -  One of the most popular email marketing tools. You can send your blogs as email campaigns to specific subscribers.
 * [New]**Medium** - Autopost to your profile or publications.
+* [New]**ok.ru (Odnoklassniki)** Autopost to your group/page. Ability to make text posts, image posts, share links.
 * **Pinterest** (*with third party API library*) - Pin your blogpost's featured image to your Pinterest board.
 * **Reddit** (*with third party API library*) - post to your subreddits.
 * **Scoop.It** - Autopost to your "Topics". Ability to attach your blogpost to scoop. Ability to make "Image" posts.
@@ -52,11 +53,11 @@ More V4 info: http://www.nextscripts.com/tag/v4/
 * **Twitter** - Autopost to your account. Ability to attach Image to tweets.
 * **Plurk**  - Autopost to your account. Ability to attach Image to messages.
 * **vBulletin** - Auto-submit your blogpost to vBulletin forums. Could create new threads or new posts.
-* **vKontakte(VK.com)** - Autopost to your profile or group page. Ability to attach your blogpost to vk.com post. Ability to make "Image" posts.
+* **vk.com (vKontakte)** - Autopost to your profile or group page. Ability to attach your blogpost to vk.com post. Ability to make "Image" posts.
 * [New]**Weibo** -  Biggest Chinese Microblogging Service. You can post your messages and images.
 * **Wordpress** - Auto-submit your blogpost to another blog based on Wordpress. This options includes Wordpress.com, Blog.com, etc..
-* **YouTube** (*with third party API library*) - Post messages to your YouTube channel feed. If blogpost has youtube reference it will be attached.
 * **XING** - Post text messages or share links.
+* **YouTube** (*with third party API library*) - Post messages to your YouTube channel feed. If blogpost has youtube reference it will be attached.
 * [New]**Yo** - Send notifications to your subscribers.
 * **500px** - Autopost images to your account.
 
@@ -179,6 +180,20 @@ Please see more <a href="http://www.nextscripts.com/faq/">Frequently asked quest
 * *Version 2.3* - Google+ image posts, delayed postings (Pro Only), new networks - Stumbleupon, vBulletin, Diigo
 
 = Details = 
+
+= 3.7.5 [10/25/2016] = 
+
+* New network "OK.RU" (Odnoklassniki) - The second biggest Russian social network. You can post messages, imagea and share links to your groups/pages.
+* Improvement/Bug Fix - Due to surprisingly high demand, we put compatibility with PHP 5.2 back. 
+* Improvement/Bug Fix - Better support for imported and shedulled posts.
+* Bug Fix - no more "Fatal error" messages if one of the API files is missing.
+
+= 3.7.4 [10/17/2016] = 
+
+* Improvement/Bug Fix - Updated Del.icio.us connector. It should make it more stable. 
+* Improvement - Better PHP7 compatibility. Fixes for most PHP7 "depreciated", "notice" and "warning" messages. 
+* Improvement - Better handling of LinkedIn messages and errors.
+* Some minor bug fixes.
 
 = 3.7.3 [10/04/2016] =
 

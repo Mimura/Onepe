@@ -115,8 +115,8 @@ class nxs_snapClassNT {
       <div style="width:100%;"><b style="font-size: 14px;"><?php echo $lKey; echo $aurl; ?> </b></div><input name="<?php echo $nt; ?>[<?php echo $ii; ?>][<?php echo $fnKey; ?>]" id="<?php echo $fnKey.$ii; ?>" style="width: 30%;" value="<?php echo htmlentities($key, ENT_COMPAT, "UTF-8"); ?>" />  
       <div style="width:100%;"><b style="font-size: 14px;"><?php echo $lSec; ?>:</b></div><input name="<?php echo $nt; ?>[<?php echo $ii; ?>][<?php echo $fnSec; ?>]" id="<?php echo $fnSec.$ii; ?>" style="width: 30%;" value="<?php echo htmlentities($sec, ENT_COMPAT, "UTF-8"); ?>" /><?php                
     }
-    public function elemURL() {
-                        
+    public function elemURL($ii,$fn,$val,$lbl,$subLbl) { $nt = $this->ntInfo['lcode']; $ntU = $this->ntInfo['code'];?>
+      <div style="width:100%;"><strong><?php echo $lbl; ?>:</strong><i><?php  echo $subLbl; ?></i></div><input name="<?php echo $nt; ?>[<?php echo $ii; ?>][<?php echo $fn; ?>]" style="width: 50%;" value="<?php echo htmlentities($val, ENT_COMPAT, "UTF-8"); ?>" /><br/><?php
     }
     public function elemMsgFormat($ii,$l,$fn,$val,$isVisible=true) { $nt = $this->ntInfo['lcode']; ?>
       <div class="nxsMsgFormatDiv" style="display:<?php echo ($isVisible)?"block":"none"; ?>;"> 
@@ -262,7 +262,7 @@ class nxs_snapClassNT {
     public function adjMetaOptG($optMt, $pMeta) { $optMt['isPosted'] = isset($pMeta['isPosted'])?$pMeta['isPosted']:''; if (isset($pMeta['postType'])) $optMt['postType'] = $pMeta['postType']; 
       if (isset($pMeta['msgFormat'])) $optMt['msgFormat'] = $pMeta['msgFormat']; if (isset($pMeta['msgTFormat'])) $optMt['msgTFormat'] = $pMeta['msgTFormat'];     
       if (isset($pMeta['imgToUse'])) $optMt['imgToUse'] = $pMeta['imgToUse']; if (isset($pMeta['urlToUse'])) $optMt['urlToUse'] = $pMeta['urlToUse']; 
-      if (isset($pMeta['timeToRun']))  $optMt['timeToRun'] = $pMeta['timeToRun'];     
+      if (isset($pMeta['timeToRun']))  $optMt['timeToRun'] = $pMeta['timeToRun']; $optMt['do'] = 0;  
       if (isset($pMeta['do'])) $optMt['do'] = $pMeta['do']; else { if (isset($pMeta['msgFormat'])) $optMt['do'] = 0; }  // What is that?
       $optMt['do'.$this->ntInfo['code']] = $optMt['do']; //V3 COMP CHANGE
       return $optMt;                    
@@ -312,7 +312,7 @@ class nxs_snapClassNT {
       } else {  // ## All Good - log it.
         if (!empty($ret['msg'])) nxs_addToLogN('I', 'Message', $logNT, print_r($ret['msg'], true), $extInfo); 
         if (!empty($_POST['nxsact'])&&($_POST['nxsact']=='manPost' || $_POST['nxsact']=='testPost')) 
-          { _e('SUCCESS','nxs_snap'); echo '<br/><br/>'.$logNT.' Page.<br/>'.((!empty($ret['postURL']))?' Post link: <a href="'.$ret['postURL'].'" target="_blank">'.$ret['postURL'].'</a><br/><br/>':'').(!empty($ret['msg'])?$ret['msg']:'').'<br/>'; }
+          { _e('SUCCESS','nxs_snap'); echo '<br/><br/>'.$logNT.' Page.<br/>'.((!empty($ret['postURL']))?' Post link: <a href="'.$ret['postURL'].'" target="_blank">'.$ret['postURL'].'</a><br/><br/>':'').(!empty($ret['msg'])?print_r($ret['msg'], true):'').'<br/>'; }
         if (!empty($ret['ck'])) nxs_save_glbNtwrks($this->ntInfo['lcode'], $ii, $ret['ck'], 'ck');
         if ($postID=='0')  { nxs_addToLogN('S', 'Test', $logNT, 'OK - TEST Message Posted | <a href="'.$ret['postURL'].'" target="_blank">Post Link</a>');} 
           else { nxs_addToRI($postID); nxs_metaMarkAsPosted($postID, $this->ntInfo['code'], $ii, array('isPosted'=>'1', 'pgID'=>$ret['postID'], 'postURL'=>$ret['postURL'], 'pDate'=>date('Y-m-d H:i:s'))); 

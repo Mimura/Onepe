@@ -12,6 +12,7 @@ if (!class_exists("nxs_class_SNAP_PN")) { class nxs_class_SNAP_PN {
       return $out;
     }    
     function doPostToNT($options, $message){ global $nxs_gCookiesArr; $badOut = array('pgID'=>'', 'isPosted'=>0, 'pDate'=>date('Y-m-d H:i:s'), 'Error'=>'');
+      if (!class_exists("nxsAPI_PN")){ $badOut['Error'] .= "Pinterest API Library not found"; return $badOut; } 
       //## Check settings
       if (!is_array($options)) { $badOut['Error'] = 'No Options'; return $badOut; }      
       if (!isset($options['pnUName']) || trim($options['pnPass'])=='') { $badOut['Error'] = 'Not Configured'; return $badOut; }            
