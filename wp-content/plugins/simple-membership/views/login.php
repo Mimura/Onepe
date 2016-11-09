@@ -29,9 +29,9 @@ $join_url = $setting->get_value('join-us-page-url');
             <div class="swpm-forgot-pass-link">
                 <a id="forgot_pass" class="swpm-login-form-pw-reset-link"  href="<?php echo $password_reset_url; ?>"><?php echo SwpmUtils::_('Forgot Password') ?>?</a>
             </div>
-            <div class="swpm-join-us-link">
-                <a id="register" class="swpm-login-form-register-link" href="<?php echo $join_url; ?>"><?php echo SwpmUtils::_('Join Us') ?></a>
-            </div>
+<!--            <div class="swpm-join-us-link">-->
+<!--                <a id="register" class="swpm-login-form-register-link" href="--><?php //echo $join_url; ?><!--">--><?php //echo SwpmUtils::_('Join Us') ?><!--</a>-->
+<!--            </div>-->
             <div class="swpm-login-action-msg">
                 <span class="swpm-login-widget-action-msg"><?php echo $auth->get_message(); ?></span>
             </div>

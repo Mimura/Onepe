@@ -24,7 +24,7 @@
                 <td><input type="text" id="first_name" value="<?php echo $first_name; ?>" size="50" name="first_name" /></td>
             </tr>
             <tr class="swpm-registration-lastname-row">
-                <td><label for="last_name"><?php echo SwpmUtils::_('TwitterID') ?></label></td>
+                <td><label for="last_name"><?php echo SwpmUtils::_('TwitterID(@は含まないでください)') ?></label></td>
                 <td><input type="text" id="last_name" value="<?php echo $last_name; ?>" size="50" name="last_name" /></td>
             </tr>
             <tr class="swpm-registration-membership-level-row">
