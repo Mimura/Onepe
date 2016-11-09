@@ -34,7 +34,7 @@
     margin: 0;
     text-transform: uppercase;
     background-color: #000000;
-    color: #b903b9
+    color: #b903b9;
 }
 
 .site-header {
@@ -42,4 +42,16 @@
     color: #000;
     min-height: 64px;
     text-align: center;
+}
+
+.home-link > img {
+    display: block;
+    margin: 0 auto;
+    max-height: 150px;
+    width: auto;
+}
+
+.link-howto {
+    color: #b903b9;
+
 }
